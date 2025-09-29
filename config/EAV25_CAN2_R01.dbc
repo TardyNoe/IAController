@@ -1,0 +1,2214 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Unknown CAN_2
+
+
+BO_ 1711 RM_SM_CustomOutput: 8 Vector__XXX
+ SG_ RM_SM_5BOutputData : 4|5@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 280 BSU_Cmd: 8 Unknown
+ SG_ BSU_TargetThrottle2_mV : 55|16@0+ (0.1,0) [0|0] "mV"  CAN_2
+ SG_ BSU_TargetThrottle1_mV : 39|16@0+ (0.1,0) [0|0] "mV"  CAN_2
+ SG_ BSU_TargetGear_Down : 31|1@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ BSU_TargetGear_Up : 30|1@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ BSU_PitSpeedLimiter_ON : 15|1@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ BSU_ThrotteTestMode : 14|1@0+ (1,0) [0|0] ""  CAN_2
+ SG_ BSU_TractionControl : 7|4@0+ (1,0) [0|0] ""  CAN_2
+ SG_ BSU_APS_Compressor_ON : 3|1@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ BSU_EngineSwitchON : 2|1@0+ (1,0) [0|0] ""  CAN_2
+ SG_ BSU_PushToPass_ON : 1|1@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ BSU_FuelPumps_SwitchedON : 0|1@0+ (1,0) [0|0] ""  CAN_2
+
+BO_ 281 BSU_Msg_01: 8 Unknown
+ SG_ BSU_SteeringAngle : 55|14@0+ (0.005,-25.5) [0|0] "rad"  CAN_2
+ SG_ BSU_BrakePressure_RR : 35|12@0+ (10000,0) [0|0] "Pa"  CAN_2
+ SG_ BSU_BrakePressure_RL : 31|12@0+ (10000,0) [0|0] "Pa"  CAN_2
+ SG_ BSU_BrakePressure_FR : 11|12@0+ (10000,0) [0|0] "Pa"  CAN_2
+ SG_ BSU_BrakePressure_FL : 7|12@0+ (10000,0) [0|0] "Pa"  CAN_2
+
+BO_ 1441 BSU_Ranges_01: 8 Unknown
+ SG_ BSU_ICE_MinThrottle : 46|7@0+ (1,0) [0|0] "%"  CAN_2
+ SG_ BSU_ICE_MaxThrottle : 38|7@0+ (1,0) [0|0] "%"  CAN_2
+ SG_ BSU_CBA_MinPress_RR_Pa : 31|1@0+ (100000,0) [0|0] "Pa"  CAN_2
+ SG_ BSU_CBA_MaxPress_RR_Pa : 28|5@0+ (500000,5000000) [0|0] "Pa"  CAN_2
+ SG_ BSU_CBA_MinPress_RL_Pa : 23|1@0+ (100000,0) [0|0] "Pa"  CAN_2
+ SG_ BSU_CBA_MaxPress_RL_Pa : 20|5@0+ (500000,5000000) [0|0] "Pa"  CAN_2
+ SG_ BSU_CBA_MinPress_FR_Pa : 15|1@0+ (100000,0) [0|0] "Pa"  CAN_2
+ SG_ BSU_CBA_MaxPress_FR_Pa : 12|5@0+ (500000,5000000) [0|0] "Pa"  CAN_2
+ SG_ BSU_CBA_MinPress_FL_Pa : 7|1@0+ (100000,0) [0|0] "Pa"  CAN_2
+ SG_ BSU_CBA_MaxPress_FL_Pa : 4|5@0+ (500000,5000000) [0|0] "Pa"  CAN_2
+
+BO_ 1442 BSU_Ranges_02: 8 Unknown
+ SG_ BSU_PSA_MaxTorque_mNm : 50|11@0+ (10,0) [0|0] "mNm"  CAN_2
+ SG_ BSU_PSA_MinTorque_mNm : 34|11@0+ (10,-19760) [0|0] "mNm"  CAN_2
+ SG_ BSU_PSA_MaxAngleSpeed : 31|8@0+ (1,0) [0|0] "rad/s"  CAN_2
+ SG_ BSU_PSA_MinAngleSpeed : 23|8@0+ (1,-255) [0|0] "rad/s"  CAN_2
+ SG_ BSU_PSA_MaxAngle_rad : 15|8@0+ (0.1,0) [0|0] "rad"  CAN_2
+ SG_ BSU_PSA_MinAngle_rad : 7|8@0+ (0.1,-25.5) [0|0] "rad"  CAN_2
+
+BO_ 513 BSU_Status_01: 8 Unknown
+ SG_ BSU_ABS_ExternalEnable_Ack : 39|1@0+ (1,0) [0|0] ""  CAN_2
+ SG_ BSU_Status : 23|10@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ BSU_AliveCounter : 15|4@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ BSU_SwitchOFF_Req : 7|1@0+ (1,0) [0|0] ""  CAN_2
+ SG_ BSU_LimpMode_Activated : 5|1@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ BSU_HL_StopRequest : 4|1@0+ (1,0) [0|0] "bool"  CAN_2
+ SG_ BSU_HL_Warning : 3|1@0+ (1,0) [0|0] "bool"  CAN_2
+ SG_ BSU_EM_Stop_Activated : 2|1@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ BSU_ML_Stop_Activated : 1|2@0+ (1,0) [0|0] "enum"  CAN_2
+
+BO_ 545 BSU_CBA_Status_FL: 8 Unknown
+ SG_ BSU_CBA_Voltage_FL_V : 63|8@0+ (0.4,0) [0|0] "V"  CAN_2
+ SG_ BSU_CBA_ActualCurr_FL_A : 47|10@0+ (0.1,-50) [0|0] "A"  CAN_2
+ SG_ BSU_CBA_TargPress_FL_ACK : 31|11@0+ (0.05,0) [0|0] "%"  CAN_2
+ SG_ BSU_CBA_ActualPress_FL : 11|11@0+ (0.05,0) [0|0] "%"  CAN_2
+ SG_ BSU_CBA_ActPress_FL_Pa : 7|12@0+ (10000,0) [0|0] "Pa"  CAN_2
+
+BO_ 546 BSU_CBA_Status_FR: 8 Unknown
+ SG_ BSU_CBA_Voltage_FR_V : 63|8@0+ (0.4,0) [0|0] "V"  CAN_2
+ SG_ BSU_CBA_ActualCurr_FR_A : 47|10@0+ (0.1,-50) [0|0] "A"  CAN_2
+ SG_ BSU_CBA_TargPress_FR_ACK : 31|11@0+ (0.05,0) [0|0] "%"  CAN_2
+ SG_ BSU_CBA_ActualPress_FR : 11|11@0+ (0.05,0) [0|0] "%"  CAN_2
+ SG_ BSU_CBA_ActPress_FR_Pa : 7|12@0+ (10000,0) [0|0] "Pa"  CAN_2
+
+BO_ 547 BSU_CBA_Status_RL: 8 Unknown
+ SG_ BSU_CBA_Voltage_RL_V : 63|8@0+ (0.4,0) [0|0] "V"  CAN_2
+ SG_ BSU_CBA_ActualCurr_RL_A : 47|10@0+ (0.1,-50) [0|0] "A"  CAN_2
+ SG_ BSU_CBA_TargPress_RL_ACK : 31|11@0+ (0.05,0) [0|0] "%"  CAN_2
+ SG_ BSU_CBA_ActualPress_RL : 11|11@0+ (0.05,0) [0|0] "%"  CAN_2
+ SG_ BSU_CBA_ActPress_RL_Pa : 7|12@0+ (10000,0) [0|0] "Pa"  CAN_2
+
+BO_ 548 BSU_CBA_Status_RR: 8 Unknown
+ SG_ BSU_CBA_Voltage_RR_V : 63|8@0+ (0.4,0) [0|0] "V"  CAN_2
+ SG_ BSU_CBA_ActualCurr_RR_A : 47|10@0+ (0.1,-50) [0|0] "A"  CAN_2
+ SG_ BSU_CBA_TargPress_RR_ACK : 31|11@0+ (0.05,0) [0|0] "%"  CAN_2
+ SG_ BSU_CBA_ActualPress_RR : 11|11@0+ (0.05,0) [0|0] "%"  CAN_2
+ SG_ BSU_CBA_ActPress_RR_Pa : 7|12@0+ (10000,0) [0|0] "Pa"  CAN_2
+
+BO_ 336 BSU_DiagnosticWord_01: 8 Unknown
+ SG_ PSA_SteerSlip_Warning : 56|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ PDU12_Active_AntiFire : 62|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ MLStop_Conditions_Active : 41|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ EMStop_Conditions_Active : 42|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ DEM_CBARR_NotReceive : 43|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ DEM_CBARL_NotReceive : 32|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ DEM_CBAFR_NotReceive : 38|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ DEM_PDU12V_NotReceive : 31|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ DEM_CBAFL_NotReceive : 18|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ICE_GearLowOilTemp_Warning : 17|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ RM_TimeoutError : 57|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ RM_CounterError : 58|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ICE_FuelVolume_Warning : 59|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ICE_TargetGearNotReached_Warning : 60|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ICE_SensorFailure_Warning : 61|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ICE_OilTemperature_Warning : 63|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ICE_OilPressure_Warning : 48|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ICE_GearOilTemperature_Warning : 49|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ICE_FuelPressure_Warning : 50|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ICE_CoolantTemperature_Warning : 51|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ICE_CoolantPressure_Warning : 52|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ICE_Boost_Warning : 53|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ BSU_WrongInitConfig : 54|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ICEOverride_WrongConfig : 55|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ DCDC4812_UnderMinStartLimit : 40|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ PSA_TimeoutError : 44|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ PSA_Error : 45|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ PSA_Derating : 46|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ PSA_CounterError : 47|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ PDU48_TimeoutError : 33|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ PDU48_CounterError : 34|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ PDU12_TimeoutError : 35|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ PDU12_CounterError : 36|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ICE_OilTemp_UnderMinStartLimit : 37|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ICE_TimeoutError : 39|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ICE_CounterError : 24|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ CAN_2_TimeoutError : 25|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ CAN_2_CounterError : 26|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ICE_APS_Warning : 27|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ICE_Starting_StartingFailed : 28|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ICE_Starting_OilHeaterFailed : 29|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ICE_Starting_FuelingFailed : 30|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ICE_EngineOffRejected : 16|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ ECU_Timeout_EM_fault : 19|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ DCDC_TimeoutError : 20|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ DCDC_StartingFaild : 21|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ CBA_RR_TimeoutError : 22|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ CBA_RR_Error : 23|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ CBA_RR_Derating : 8|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ CBA_RR_CounterError : 9|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ CBA_RL_TimeoutError : 10|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ CBA_RL_Error : 11|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ CBA_RL_Derating : 12|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ CBA_RL_CounterError : 13|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ CBA_FR_TimeoutError : 14|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ CBA_FR_Error : 15|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ CBA_FR_Derating : 0|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ CBA_FR_CounterError : 1|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ CBA_FL_TimeoutError : 2|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ CBA_FL_Error : 3|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ CBA_FL_Derating : 4|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ CBA_FL_CounterError : 5|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ BMS_TimeoutError : 6|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ BMS_StartingFaild : 7|1@0+ (1,0) [0|1] "bool"  CAN_2
+
+BO_ 338 BSU_DiagnosticWord_02: 4 Unknown
+ SG_ RM_EMFlag : 16|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ MLStop_BrakeBias_DefVal : 17|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ LimpICE_SatValues_DefVal : 18|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ CBA_SatRates_DefVal : 19|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ PSA_SatRates_DefVal : 20|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ ICE_OilTempByPass_DefVal : 21|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ ICE_FuelPresStartLimit_DefVal : 22|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ Heater_OilTempMaxValue_DefVal : 23|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ FAN_WaterTempMinValue_DefVal : 8|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ FAN_WaterTempMaxValue_DefVal : 9|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ FAN_CarSpeedMinValue_DefVal : 10|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ FAN_CarSpeedMaxValue_DefVal : 11|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ LimpCBA_SatValues_DefVal : 12|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ PSA_SatValues_DefVal : 13|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ MLStop_BrakeSat_DefVal : 14|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ ICE_OilTempStartLimit_DefVal : 15|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ CBA_SatValues_DefVal : 0|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ CBA_EMBrakeSat_DefVal : 1|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ Display_CounterError : 2|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ RM_SafeStop : 3|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ RM_RedFlag : 4|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ Display_TimeoutError : 5|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ RC_Beacon_TimeOut : 6|1@0+ (1,0) [0|1] "bool"  CAN_2
+ SG_ RC_ForceRaceMode : 7|1@0+ (1,0) [0|1] "bool"  CAN_2
+
+BO_ 337 BSU_EM_Status_01: 8 Unknown
+ SG_ BSU_HLStop_TimeToDec_2 : 49|10@0+ (0.1,0) [0|0] "s"  CAN_2
+ SG_ BSU_HLStop_TimeToDec_1 : 43|10@0+ (0.1,0) [0|0] "s"  CAN_2
+ SG_ BSU_HLStop_Decel_2 : 37|10@0+ (0.1,0) [0|0] "m/s"  CAN_2
+ SG_ BSU_HLStop_Decel_1 : 31|10@0+ (0.1,0) [0|0] "m/s"  CAN_2
+ SG_ BSU_EM_Status : 9|10@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ BSU_EMB_DC4812_Voltage : 0|7@0+ (0.2,0) [0|0] "V"  CAN_2
+
+BO_ 549 BSU_ICE_Status_01: 8 Unknown
+ SG_ BSU_ICE_Downshift_Available : 57|1@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ BSU_ICE_AvailableFuel_l : 41|16@0+ (0.01,0) [0|0] "l"  CAN_2
+ SG_ BSU_ICE_PushToPass_Req : 27|1@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ BSU_ICE_PushToPass_ACK : 26|1@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ BSU_ICE_WaterPress_kPa : 25|16@0+ (0.1,-32) [0|0] "kPa"  CAN_2
+ SG_ BSU_ICE_TargThrottle_ACK : 21|10@0+ (0.1,0) [0|0] "%"  CAN_2
+ SG_ BSU_ICE_ActualThrottle : 15|10@0+ (0.1,0) [0|0] "%"  CAN_2
+ SG_ BSU_ICE_ActualGear : 7|4@0+ (1,-1) [0|0] "enum"  CAN_2
+ SG_ BSU_ICE_TargetGear_ACK : 3|4@0+ (1,-1) [0|0] "enum"  CAN_2
+
+BO_ 550 BSU_ICE_Status_02: 8 Unknown
+ SG_ BSU_ICE_OilPress_kPa : 55|14@0+ (0.1,0) [0|0] "kPa"  CAN_2
+ SG_ BSU_ICE_WaterTemp_degC : 47|8@0+ (1,-40) [0|0] "degC"  CAN_2
+ SG_ BSU_ICE_FuelPress_kPa : 31|16@0+ (0.02,0) [0|0] "kPa"  CAN_2
+ SG_ BSU_ICE_EngineSpeed_rpm : 15|16@0+ (0.4,0) [0|0] "rpm"  CAN_2
+ SG_ BSU_ICE_OilTemp_degC : 7|8@0+ (1,-40) [0|0] "degC"  CAN_2
+
+BO_ 561 BSU_PDUs_Status_01: 8 Unknown
+ SG_ BSU_PDU48_Total_Curr_A : 51|12@0+ (0.1,0) [0|0] "A"  CAN_2
+ SG_ BSU_PDU48_PwrSupply_Volt : 39|16@0+ (0.001,0) [0|0] "V"  CAN_2
+ SG_ BSU_PDU12_TotalCurrent_A : 19|12@0+ (0.1,0) [0|0] "A"  CAN_2
+ SG_ BSU_PDU12_PwrSupply_Volt : 7|16@0+ (0.001,0) [0|0] "V"  CAN_2
+
+BO_ 529 BSU_PSA_Status_01: 8 Unknown
+ SG_ BSU_PSA_ActualVoltage_V : 50|8@0+ (0.4,0) [0|0] "V"  CAN_2
+ SG_ BSU_PSA_ActualModeOfOperation : 47|3@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ BSU_PSA_ActualCurrent_A : 44|10@0+ (0.1,-50) [0|0] "A"  CAN_2
+ SG_ BSU_PSA_ActualTorque_mNm : 28|13@0+ (10,-32000) [0|0] "mNm"  CAN_2
+ SG_ BSU_PSA_ActualSpeed_rads : 9|13@0+ (0.1,-255) [0|0] "rad/s"  CAN_2
+ SG_ BSU_PSA_ActualPos_rad : 7|14@0+ (0.005,-25.5) [0|0] "rad"  CAN_2
+
+BO_ 530 BSU_PSA_Status_02: 8 Unknown
+ SG_ BSU_PSA_ActualTorque : 35|12@0+ (0.05,-100) [0|0] "%"  CAN_2
+ SG_ BSU_PSA_ActualSpeed : 31|12@0+ (0.05,-100) [0|0] "%"  CAN_2
+ SG_ BSU_PSA_ActualPos : 11|12@0+ (0.05,-100) [0|0] "%"  CAN_2
+ SG_ BSU_PSA_TargPSACtrl_ACK : 7|12@0+ (0.05,-100) [0|0] "%"  CAN_2
+
+BO_ 339 BSU_RC_Status_01: 8 Unknown
+ SG_ BSU_RC_SectorFlag : 39|8@0+ (1,0) [0|0] ""  CAN_2
+ SG_ BSU_RC_TrackFlag : 23|16@0+ (1,0) [0|0] ""  CAN_2
+ SG_ BSU_RC_CarFlag : 15|8@0+ (1,0) [0|0] ""  CAN_2
+ SG_ BSU_RC_SessionType : 7|8@0+ (1,0) [0|0] ""  CAN_2
+
+BO_ 1710 BSU_SM_Input: 8 Unknown
+ SG_ SM_DriverAcknowlodge : 8|1@0+ (1,0) [0|1] ""  CAN_2
+ SG_ SM_custom5BitsInputData : 4|5@0+ (1,0) [0|31] ""  CAN_2
+
+BO_ 1457 BSU_SW_Versions_01: 8 Unknown
+ SG_ BSU_PDU48_SW_Version : 63|8@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ BSU_PDU12_SW_Version : 55|8@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ BSU_PSA_SW_buildVersion : 35|10@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ BSU_PSA_SW_minorVersion : 31|7@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ BSU_PSA_SW_MajorVersion : 24|5@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ BSU_BSU_SW_buildVersion : 11|10@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ BSU_SW_minorVersion : 7|7@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ BSU_SW_MajorVersion : 0|5@0+ (1,0) [0|0] "uint"  CAN_2
+
+BO_ 1458 BSU_SW_Versions_02: 8 Unknown
+ SG_ BSU_CBA_FR_SW_buildVersion : 35|10@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ BSU_CBA_FR_SW_minorVersion : 31|7@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ BSU_CBA_FR_SW_MajorVersion : 24|5@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ BSU_CBA_FL_SW_buildVersion : 11|10@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ BSU_CBA_FL_SW_minorVersion : 7|7@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ BSU_CBA_FL_SW_MajorVersion : 0|5@0+ (1,0) [0|0] "uint"  CAN_2
+
+BO_ 1459 BSU_SW_Versions_03: 8 Unknown
+ SG_ BSU_CBA_RR_SW_buildVersion : 35|10@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ BSU_CBA_RR_SW_minorVersion : 31|7@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ BSU_CBA_RR_SW_MajorVersion : 24|5@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ BSU_CBA_RL_SW_buildVersion : 11|10@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ BSU_CBA_RL_SW_minorVersion : 7|7@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ BSU_CBA_RL_SW_MajorVersion : 0|5@0+ (1,0) [0|0] "uint"  CAN_2
+
+BO_ 321 BSU_Wheels_Speed_01: 8 Unknown
+ SG_ BSU_WSS_Speed_RR_C2 : 53|14@0+ (0.025,0) [0|0] "rad/s"  CAN_2
+ SG_ BSU_WSS_Speed_RL_C2 : 37|14@0+ (0.025,0) [0|0] "rad/s"  CAN_2
+ SG_ BSU_WSS_Speed_FR_C2 : 21|14@0+ (0.025,0) [0|0] "rad/s"  CAN_2
+ SG_ BSU_WSS_Speed_FL_C2 : 5|14@0+ (0.025,0) [0|0] "rad/s"  CAN_2
+
+BO_ 800 BSU_RM_BSUReq_1: 4 Unknown
+ SG_ BSU_RM_CurrentFlags_ACK : 15|8@0- (1,0) [0|0] ""  CAN_2
+ SG_ BSU_RM_AliveCounter : 3|4@0+ (1,0) [0|0] "enum"  CAN_2
+
+BO_ 132 RM_GPS_Latitude: 8 Unknown
+ SG_ RM_UTCTime : 39|32@0+ (1,0) [0|0] "hhmmsscc"  CAN_2
+ SG_ RM_GPSLatitude : 7|32@0- (1E-007,0) [0|0] "°"  CAN_2
+
+BO_ 134 RM_GPS_Info: 8 Unknown
+ SG_ RM_GPS_Heading : 39|16@0+ (0.01,0) [0|0] "deg" Vector__XXX
+ SG_ RM_Spare2_0x86 : 48|16@1+ (1,0) [0|0] ""  CAN_2
+ SG_ RM_GPS_Speed : 23|16@0+ (0.1,0) [0|0] "kmh"  CAN_2
+ SG_ RM_Spare1_0x86 : 8|8@1+ (1,0) [0|0] ""  CAN_2
+ SG_ RM_GPS_Status : 0|8@1+ (1,0) [0|0] ""  CAN_2
+
+BO_ 133 RM_GPS_Longitude: 8 Unknown
+ SG_ RM_Spare3_0x85 : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RM_Spare2_0x85 : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RM_Spare1_0x85 : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RM_Spare4_0x85 : 56|8@1+ (1,0) [0|0] ""  CAN_2
+ SG_ RM_GPSLongitude : 7|32@0- (1E-007,0) [0|0] "°"  CAN_2
+
+BO_ 138 RM_SM_RawAcc: 8 Unknown
+ SG_ RM_Acc_Z : 39|16@0- (0.001,0) [0|0] "G" Vector__XXX
+ SG_ RM_Spare_0x8A : 48|16@1+ (1,0) [0|0] ""  CAN_2
+ SG_ RM_Acc_Y : 23|16@0- (0.001,0) [0|0] "G"  CAN_2
+ SG_ RM_Acc_X : 7|16@0- (0.001,0) [0|0] "G"  CAN_2
+
+BO_ 126 RM_Accident_Severity: 8 Unknown
+ SG_ RM_SM_SerialNumber : 31|24@0+ (1,0) [0|0] ""  CAN_2
+ SG_ RM_SM_Temperature : 23|8@0- (1,0) [0|0] "deg"  CAN_2
+ SG_ RM_Battery_SOC : 15|8@0+ (1,0) [0|0] "%"  CAN_2
+ SG_ RM_AccidentSeverity : 7|8@0+ (1,0) [0|0] "G"  CAN_2
+
+BO_ 148 RM_SM_Radio_Diags: 8 Unknown
+ SG_ RM_Spare_0x94 : 56|8@1+ (1,0) [0|0] ""  CAN_2
+ SG_ RM_BS3_BeaconRSSI : 48|8@1- (1,0) [0|0] ""  CAN_2
+ SG_ RM_BS2_BeaconRSSI : 40|8@1- (1,0) [0|0] ""  CAN_2
+ SG_ RM_BS1_BeaconRSSI : 32|8@1- (1,0) [0|0] ""  CAN_2
+ SG_ RM_BS_BeaconMask : 24|8@1+ (1,0) [0|0] ""  CAN_2
+ SG_ RM_BS3_BeaconReceived : 16|8@1+ (1,0) [0|0] ""  CAN_2
+ SG_ RM_BS2_BeaconReceived : 8|8@1+ (1,0) [0|0] ""  CAN_2
+ SG_ RM_BS1_BeaconReceived : 0|8@1+ (1,0) [0|0] ""  CAN_2
+
+BO_ 124 RM_Flag_Info_Output: 8 Unknown
+ SG_ RM_CRC_SM : 63|8@0+ (1,0) [0|0] ""  CAN_2
+ SG_ RM_SM_Car_Flag : 55|8@0- (1,0) [0|0] ""  CAN_2
+ SG_ RM_SM_Track_Flag : 47|8@0- (1,0) [0|0] ""  CAN_2
+ SG_ RM_SM_SessionType : 39|8@0- (1,0) [0|0] ""  CAN_2
+ SG_ RM_Spare2_0x7C : 31|8@0+ (1,0) [0|0] ""  CAN_2
+ SG_ RM_Spare1_0x7C : 23|8@0+ (1,0) [0|0] ""  CAN_2
+ SG_ RM_FreeRunningCounter : 15|8@0+ (1,0) [0|0] ""  CAN_2
+ SG_ RM_Led_Status : 7|8@0- (1,0) [0|0] ""  CAN_2
+
+BO_ 257 HL_Msg_01: 8 Unknown
+ SG_ HL_TargetGear : 55|4@0+ (1,-1) [0|0] "enum"  CAN_2
+ SG_ HL_TargetThrottle : 51|10@0+ (0.1,0) [0|0] "%"  CAN_2
+ SG_ HL_TargetPressure_FL : 34|11@0+ (0.05,0) [0|0] "%"  CAN_2
+ SG_ HL_TargetPressure_FR : 29|11@0+ (0.05,0) [0|0] "%"  CAN_2
+ SG_ HL_TargetPressure_RL : 8|11@0+ (0.05,0) [0|0] "%"  CAN_2
+ SG_ HL_Alive_01 : 7|4@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ HL_TargetPressure_RR : 3|11@0+ (0.05,0) [0|0] "%"  CAN_2
+
+BO_ 258 HL_Msg_02: 8 Unknown
+ SG_ HL_PSA_Profile_Vel_rad_s : 54|15@0+ (0.1,0) [0|0] "rad_s"  CAN_2
+ SG_ HL_PSA_Profile_Dec : 37|15@0+ (0.1,0) [0|0] "rad/s2"  CAN_2
+ SG_ HL_PSA_Profile_Acc : 20|15@0+ (0.1,0) [0|0] "rad/s2"  CAN_2
+ SG_ HL_Alive_02 : 7|4@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ HL_PSA_ModeOfOperation : 3|3@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ HL_TargetPSAControl : 0|12@0+ (0.05,-100) [0|0] "%"  CAN_2
+
+BO_ 259 HL_Msg_03: 5 Unknown
+ SG_ HL_ICE_InitFuelLevel : 23|16@0+ (0.01,0) [0|0] "l" Vector__XXX
+ SG_ HL_Crancking_ByPass : 39|1@0+ (1,0) [0|0] ""  CAN_2
+ SG_ HL_SwitchOFF_Ok : 38|1@0+ (1,0) [0|0] ""  CAN_2
+ SG_ HL_ICE_Enable : 15|1@0+ (1,0) [0|0] "bool"  CAN_2
+ SG_ HL_PDU12_Activate_Lidar : 13|1@0+ (1,0) [0|0] "bool"  CAN_2
+ SG_ HL_PDU12_Activate_RADAR : 11|1@0+ (1,0) [0|0] "bool"  CAN_2
+ SG_ HL_Alive_03 : 7|4@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ HL_DBW_Enable : 3|1@0+ (1,0) [0|0] ""  CAN_2
+ SG_ HL_PushToPass_ON : 2|1@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ HL_PDU12_Activate_GNSS : 1|1@0+ (1,0) [0|0] "bool"  CAN_2
+ SG_ HL_PDU12_Activate_OSS : 0|1@0+ (1,0) [0|0] "bool"  CAN_2
+
+BO_ 273 HL_Trajectory_01: 8 Unknown
+ SG_ Trajectory_LateralOffSet : 63|8@0+ (0.05,-6.375) [0|0] "m"  CAN_2
+ SG_ Trajectory_Curvature_05 : 43|11@0+ (0.0001,-0.1) [0|0] "1/m"  CAN_2
+ SG_ Trajectory_Curvature_04 : 38|11@0+ (0.0001,-0.1) [0|0] "1/m"  CAN_2
+ SG_ Trajectory_Curvature_03 : 17|11@0+ (0.0001,-0.1) [0|0] "1/m"  CAN_2
+ SG_ Trajectory_Curvature_02 : 12|11@0+ (0.0001,-0.1) [0|0] "1/m"  CAN_2
+ SG_ Trajectory_Curvature_01 : 7|11@0+ (0.0001,-0.1) [0|0] "1/m"  CAN_2
+
+BO_ 274 HL_Trajectory_02: 8 Unknown
+ SG_ Trajectory_HeadingOffSet : 63|8@0+ (0.002,-0.255) [0|0] "m"  CAN_2
+ SG_ Trajectory_Curvature_10 : 43|11@0+ (0.0001,-0.1) [0|0] "1/m"  CAN_2
+ SG_ Trajectory_Curvature_09 : 38|11@0+ (0.0001,-0.1) [0|0] "1/m"  CAN_2
+ SG_ Trajectory_Curvature_08 : 17|11@0+ (0.0001,-0.1) [0|0] "1/m"  CAN_2
+ SG_ Trajectory_Curvature_07 : 12|11@0+ (0.0001,-0.1) [0|0] "1/m"  CAN_2
+ SG_ Trajectory_Curvature_06 : 7|11@0+ (0.0001,-0.1) [0|0] "1/m"  CAN_2
+
+BO_ 260 HL_Msg_04: 8 Unknown
+ SG_ HL_Longitude : 39|32@0- (1E-007,0) [0|0] "deg"  CAN_2
+ SG_ HL_Latitude : 7|32@0- (1E-007,0) [0|0] "deg"  CAN_2
+
+BO_ 261 HL_Msg_05: 8 Unknown
+ SG_ HL_Vel_Up : 55|16@0- (0.005,0) [0|0] ""  CAN_2
+ SG_ HL_Vel_North : 39|16@0- (0.005,0) [0|0] ""  CAN_2
+ SG_ HL_Vel_East : 23|16@0- (0.005,0) [0|0] ""  CAN_2
+ SG_ HL_Height : 7|16@0- (0.1,0) [0|0] "m"  CAN_2
+
+BO_ 262 HL_MSg_06: 8 Unknown
+ SG_ HL_Aggressiveness : 47|4@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ HL_Watts_Consumed : 43|10@0+ (1,0) [0|0] "W"  CAN_2
+ SG_ HL_Localization_Acc : 39|8@0+ (1,0) [0|0] "%"  CAN_2
+ SG_ HL_Perception_Acc : 31|8@0+ (1,0) [0|0] "%"  CAN_2
+ SG_ HL_GPU_Usage : 23|8@0+ (1,0) [0|0] "%"  CAN_2
+ SG_ HL_CPU_Usage : 15|8@0+ (1,0) [0|0] "%"  CAN_2
+ SG_ HL_PC_Temp : 7|8@0+ (1,-40) [0|0] "degC"  CAN_2
+
+BO_ 292 Motec_Msg_03: 4 Unknown
+ SG_ M1_MaxDownShift_rpm_ML : 23|16@0+ (0.4,0) [0|0] "rpm"  CAN_2
+ SG_ M1_Fuel_Used_ML : 7|16@0+ (0.01,0) [0|0] "l"  CAN_2
+
+BO_ 291 Motec_Msg_Warning: 8 Unknown
+ SG_ M1_Engine_Run_Time_ML : 55|16@0+ (1,0) [0|0] "s"  CAN_2
+ SG_ M1_ECU_Up_Time_ML : 39|16@0+ (1,0) [0|0] "s"  CAN_2
+ SG_ M1_Warning_Source_ML : 31|8@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ M1_Boost_Warning_ML : 15|1@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ M1_Gearoil_Temp_Warning_ML : 14|1@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ M1_Coolant_Press_Warning_ML : 7|1@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ M1_Coolant_Temp_Warning_ML : 6|1@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ M1_APS_Warning_ML : 5|1@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ M1_Engine_Oil_Press_Warning_ML : 4|1@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ M1_Engine_Oil_TempWarningML : 3|1@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ M1_Engine_Speed_Warning_ML : 2|1@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ M1_Fuel_Pressure_Warning_ML : 1|1@0+ (1,0) [0|0] "enum"  CAN_2
+ SG_ M1_Knock_Warning_ML : 0|1@0+ (1,0) [0|0] "enum"  CAN_2
+
+BO_ 290 Motec_Msg_State: 8 Unknown
+ SG_ M1_PushToPass_State_ML : 63|4@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ M1_Engine_State_ML : 55|4@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ M1_Fuel_State_ML : 51|4@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ M1_Launch_State_ML : 47|4@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ M1_Throttle_Aim_State_ML : 43|4@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ M1_Fuel_Pump_State_ML : 39|4@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ M1_Knock_State_ML : 35|4@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ M1_FuelCLoop_State_ML : 31|4@0+ (1,-1) [0|0] "uint"  CAN_2
+ SG_ M1_Fuel_Cut_State_ML : 27|4@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ M1_Engine_Speed_Limit_State_ML : 23|8@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ M1_Engine_Overrun_State_ML : 15|4@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ M1_Engine_Speed_Ref_State_ML : 11|4@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ M1_OilPressSensor_State_ML : 7|4@0+ (1,0) [0|0] "uint"  CAN_2
+ SG_ M1_Boost_Aim_State_ML : 3|4@0+ (1,0) [0|0] "uint"  CAN_2
+
+BO_ 289 Motec_Msg_02: 8 Unknown
+ SG_ M1_WaterPress_ML : 43|16@0+ (0.1,-32) [0|0] "kPa"  CAN_2
+ SG_ M1_WaterTemp_ML : 35|8@0+ (1,-40) [0|0] "C"  CAN_2
+ SG_ M1_OilTemp_ML : 27|8@0+ (1,-40) [0|0] "C"  CAN_2
+ SG_ M1_OilPress_ML : 9|14@0+ (0.1,0) [0|0] "kPa"  CAN_2
+ SG_ M1_MiddleFuelPumpPressML : 7|14@0+ (0.1,0) [0|0] "kPa"  CAN_2
+
+BO_ 288 Motec_Msg_01: 8 Unknown
+ SG_ M1_GearOil_Temp_degC_ML : 63|8@0+ (1,-40) [0|0] "C"  CAN_2
+ SG_ M1_EngineSwitchedON_ML : 53|1@0- (1,0) [0|0] ""  CAN_2
+ SG_ M1_FuelPressDirect_ML : 37|16@0+ (0.001,0) [0|0] "MPa"  CAN_2
+ SG_ M1_EngineSpeed_ML : 21|16@0+ (0.4,0) [0|0] "rpm"  CAN_2
+ SG_ M1_ActualThrottle_ML : 15|10@0+ (0.1,0) [0|0] "%"  CAN_2
+ SG_ M1_ActualGear_ML : 7|4@0- (1,0) [0|0] ""  CAN_2
+ SG_ M1_AliveCounter_ML : 3|4@0+ (1,0) [0|0] "s"  CAN_2
+
+BO_ 1280 RM_CD_PI_1: 4 CAN_2
+ SG_ M1_Engine_Speed : 16|16@1- (1,0) [0|0] "rpm"  Unknown
+ SG_ Speed : 0|16@1- (1,0) [0|0] "kph"  Unknown
+
+BO_ 1296 RM_CD_CC_1: 7 CAN_2
+ SG_ M1_ActualGear_ML : 48|4@1- (1,0) [0|0] ""  Unknown
+ SG_ M1_ActualThrottle_ML : 40|8@1+ (1,0) [0|0] "%"  Unknown
+ SG_ BSU_PSA_ActualPos : 32|8@1- (1,0) [0|0] "%"  Unknown
+ SG_ BSU_CBA_ActualPress_RR : 24|8@1+ (1,0) [0|0] "%"  Unknown
+ SG_ BSU_CBA_ActualPress_RL : 16|8@1+ (1,0) [0|0] "%"  Unknown
+ SG_ BSU_CBA_ActualPress_FR : 8|8@1+ (1,0) [0|0] "%"  Unknown
+ SG_ BSU_CBA_ActualPress_FL : 0|8@1+ (1,0) [0|0] "%"  Unknown
+
+BO_ 1312 RM_CD_CS_1: 8 CAN_2
+ SG_ in_BrakeDiskTempRR : 48|16@1+ (1,0) [0|0] "°C"  Unknown
+ SG_ in_BrakeDiskTempRL : 32|16@1+ (1,0) [0|0] "°C"  Unknown
+ SG_ in_BrakeDiskTempFR : 16|16@1+ (1,0) [0|0] "°C"  Unknown
+ SG_ in_BrakeDiskTempFL : 0|16@1+ (1,0) [0|0] "°C"  Unknown
+
+BO_ 1313 RM_CD_CS_2: 8 CAN_2
+ SG_ TPR4_Press_RR : 48|16@1+ (0.0145038,0) [0|0] "psi"  Unknown
+ SG_ TPR4_Press_RL : 32|16@1+ (0.0145038,0) [0|0] "psi"  Unknown
+ SG_ TPR4_Press_FR : 16|16@1+ (0.0145038,0) [0|0] "psi"  Unknown
+ SG_ TPR4_Press_FL : 0|16@1+ (0.0145038,0) [0|0] "psi"  Unknown
+
+BO_ 1314 RM_CD_CS_3: 5 CAN_2
+ SG_ exp_TT_CenterRL : 32|8@1+ (1,0) [0|0] "°C"  Unknown
+ SG_ exp_TT_CenterRR : 24|8@1+ (1,0) [0|0] "°C"  Unknown
+ SG_ exp_TT_CenterFR : 16|8@1+ (1,0) [0|0] "°C"  Unknown
+ SG_ exp_TT_CenterFL : 8|8@1+ (1,0) [0|0] "°C"  Unknown
+ SG_ M1_Coolant_Temperature : 0|8@1+ (1,0) [0|0] "°C"  Unknown
+
+
+
+CM_ BO_ 1711 "EMM Car Marshalling Device sends additional GPS information.Transmitter: Smart Marshalling.Receiver: Car Control Unit.Message Rate: 10 Hz.";
+CM_ BO_ 513 "Aggiornato 2024-10-31";
+CM_ BO_ 561 "Aggiornato 2024-10-31";
+CM_ BO_ 800 "Sent by the BSU";
+CM_ SG_ 800 BSU_RM_CurrentFlags_ACK "ack of the actual flag operating in the car control unit";
+CM_ BO_ 132 "EMM Car Marshalling Device sends the GPS longitude and UTC Time information.Transmitter: Smart Marshalling.Receiver: Car Control Unit.Message Rate: 10 Hz.";
+CM_ SG_ 132 RM_UTCTime "UTC Time";
+CM_ SG_ 132 RM_GPSLatitude "GPS Latitude";
+CM_ BO_ 134 "EMM Car Marshalling Device sends additional GPS information.Transmitter: Smart Marshalling.Receiver: Car Control Unit.Message Rate: 10 Hz.";
+CM_ SG_ 134 RM_GPS_Heading "GPS Speed";
+CM_ SG_ 134 RM_Spare2_0x86 "16-bit spare";
+CM_ SG_ 134 RM_GPS_Speed "GPS Speed";
+CM_ SG_ 134 RM_Spare1_0x86 "8-bit spare";
+CM_ SG_ 134 RM_GPS_Status "GPS Diagnosis";
+CM_ BO_ 133 "EMM Car Marshalling Device sends the GPS longitude and UTC Time information.Transmitter: Smart Marshalling.Receiver: Car Control Unit.Message Rate: 10 Hz.";
+CM_ SG_ 133 RM_Spare3_0x85 "8-bit spare";
+CM_ SG_ 133 RM_Spare2_0x85 "8-bit spare";
+CM_ SG_ 133 RM_Spare1_0x85 "8-bit spare";
+CM_ SG_ 133 RM_Spare4_0x85 "8-bit spare";
+CM_ SG_ 133 RM_GPSLongitude "GPS Longitude";
+CM_ BO_ 138 "EMM Car Marshalling Device outputs accelerometer data.Transmitter: Smart Marshalling.Receiver: Car Control Unit.Message Rate: 100 Hz.";
+CM_ SG_ 138 RM_Acc_Z "EMM Car Marshalling Equipment outputs Y-axis accelerometer values";
+CM_ SG_ 138 RM_Spare_0x8A "16-bit spare";
+CM_ SG_ 138 RM_Acc_Y "EMM Car Marshalling Equipment outputs Y-axis accelerometer values";
+CM_ SG_ 138 RM_Acc_X "EMM Car Marshalling Equipment outputs X-axis accelerometer values";
+CM_ BO_ 126 "EMM Car Marshalling Device sends the accident severity index, SM Serial number and other diagnosticsTransmitters: Smart Marshalling.Receivers: Car Control Unit.Message Rate: 10 Hz.";
+CM_ SG_ 126 RM_SM_SerialNumber "8-bit spare";
+CM_ SG_ 126 RM_SM_Temperature "EMM Car Marshalling Equipment outputs SOC temperature";
+CM_ SG_ 126 RM_Battery_SOC "EMM Car Marshalling Equipment battery remaining";
+CM_ SG_ 126 RM_AccidentSeverity "EMM Car Marshalling Equipment outputs Accident Severity (in G)";
+CM_ BO_ 148 "EMM Car Marshalling Device outputs radio diagnostic information.Transmitter: Smart Marshalling.Receivers: Car Control Unit.Message Rate: 10Hz";
+CM_ SG_ 148 RM_Spare_0x94 "8-bit spare";
+CM_ SG_ 148 RM_BS3_BeaconRSSI "RSSI from BS3. Scaling = -100 - 30";
+CM_ SG_ 148 RM_BS2_BeaconRSSI "RSSI from BS2. Scaling = -100 - 30";
+CM_ SG_ 148 RM_BS1_BeaconRSSI "RSSI from BS1. Scaling = -100 - 30";
+CM_ SG_ 148 RM_BS_BeaconMask "BitmaskedBit 0 BS1Bit 1 BS2Bit 2 BS3";
+CM_ SG_ 148 RM_BS3_BeaconReceived "1 = Beacon Received from BS3";
+CM_ SG_ 148 RM_BS2_BeaconReceived "1 = Beacon Received from BS2";
+CM_ SG_ 148 RM_BS1_BeaconReceived "1 = Beacon Received from BS1";
+CM_ BO_ 124 "EMM Car Marshalling Device sends flag information to the Display unit.Transmitter: CMDReceiver: DDUMessage Rate: 100 Hz";
+CM_ SG_ 124 RM_CRC_SM "CRC: 1’s complement of XOR sum bytes 0-6";
+CM_ SG_ 124 RM_Spare2_0x7C "8-bit spare";
+CM_ SG_ 124 RM_Spare1_0x7C "8-bit spare";
+CM_ SG_ 124 RM_FreeRunningCounter "EMM Car Marshalling Equipment outputs free running counter";
+CM_ SG_ 124 RM_Led_Status "EMM Car Marshalling Equipment outputs flag information to the Display unit.";
+CM_ SG_ 258 HL_PSA_Profile_Vel_rad_s "If This Signal is set to 0, Default value will be send by the BSU";
+CM_ SG_ 258 HL_PSA_Profile_Dec "If This Signal is set to 0, Default value will be send by the BSU";
+CM_ SG_ 258 HL_PSA_Profile_Acc "If This Signal is set to 0, Default value will be send by the BSU";
+CM_ BO_ 273 "This message is not used in the BSU for now";
+CM_ BO_ 274 "This message is not used in the BSU for now";
+CM_ SG_ 1312 in_BrakeDiskTempFL "0-1000°C";
+BA_DEF_ BU_  "NodeCanPort" STRING ;
+BA_DEF_ BU_  "NodeDescription" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 1 1000;
+BA_DEF_ BO_  "MsgFullName" STRING ;
+BA_DEF_ BO_  "MsgHasCondition" STRING ;
+BA_DEF_ BO_  "MsgConditionSourceType" ENUM  "Channel","BitFieldChannel","SystemStatus";
+BA_DEF_ BO_  "MsgConditionSource" STRING ;
+BA_DEF_ BO_  "MsgConditionOperand" ENUM  "LessThan","LessThanOrEqual","Equal","NotEqual","GreaterThanOrEqual","GreaterThan";
+BA_DEF_ BO_  "MsgConditionValueContents" STRING ;
+BA_DEF_ BO_  "MsgConditionValueQuantity" STRING ;
+BA_DEF_ BO_  "MsgConditionValueUnit" STRING ;
+BA_DEF_ BO_  "MsgConditionBitField" STRING ;
+BA_DEF_ BO_  "MsgConditionStringValue" STRING ;
+BA_DEF_ BO_  "MsgConditionUserUnit" STRING ;
+BA_DEF_ BO_  "MsgTimeoutStatusChannel" STRING ;
+BA_DEF_ BO_  "MsgReceiveTimeout" FLOAT 0 10000;
+BA_DEF_ SG_  "GenSigStartValue" INT -2147483648 2147483647;
+BA_DEF_ SG_  "SigProtected" ENUM  "Yes","No";
+BA_DEF_ SG_  "SigClass" ENUM  "Analog","Button","Channel","Digital";
+BA_DEF_ SG_  "SigAnalogInputTerm" INT -10000 10000;
+BA_DEF_ SG_  "SigButtonNames" STRING ;
+BA_DEF_ SG_  "SigBitFieldChannel" STRING ;
+BA_DEF_ SG_  "BitNumbering" ENUM  "OSEK","FollowsEndianness";
+BA_DEF_ SG_  "SigFullName" STRING ;
+BA_DEF_ SG_  "SigTimeoutBehavior" ENUM  "Hold","ResetToDefault";
+BA_DEF_  "NetProtected" ENUM  "Yes","No";
+BA_DEF_  "Baudrate" INT 1000 1000000;
+BA_DEF_DEF_  "NodeCanPort" "";
+BA_DEF_DEF_  "NodeDescription" "";
+BA_DEF_DEF_  "GenMsgCycleTime" 1000000.01267033;
+BA_DEF_DEF_  "MsgFullName" "";
+BA_DEF_DEF_  "MsgHasCondition" "false";
+BA_DEF_DEF_  "MsgConditionSourceType" "Channel";
+BA_DEF_DEF_  "MsgConditionSource" "";
+BA_DEF_DEF_  "MsgConditionOperand" "GreaterThan";
+BA_DEF_DEF_  "MsgConditionValueContents" "0.000";
+BA_DEF_DEF_  "MsgConditionValueQuantity" "user type";
+BA_DEF_DEF_  "MsgConditionValueUnit" "user defined";
+BA_DEF_DEF_  "MsgConditionBitField" "";
+BA_DEF_DEF_  "MsgConditionStringValue" "";
+BA_DEF_DEF_  "MsgConditionUserUnit" "";
+BA_DEF_DEF_  "MsgTimeoutStatusChannel" "";
+BA_DEF_DEF_  "MsgReceiveTimeout" 1000000.01267032;
+BA_DEF_DEF_  "GenSigStartValue" 1000000.01267033;
+BA_DEF_DEF_  "SigProtected" "No";
+BA_DEF_DEF_  "SigClass" "Channel";
+BA_DEF_DEF_  "SigAnalogInputTerm" 1000000.01267032;
+BA_DEF_DEF_  "SigButtonNames" "";
+BA_DEF_DEF_  "SigBitFieldChannel" "";
+BA_DEF_DEF_  "BitNumbering" "OSEK";
+BA_DEF_DEF_  "SigFullName" "";
+BA_DEF_DEF_  "SigTimeoutBehavior" "Hold";
+BA_DEF_DEF_  "NetProtected" "No";
+BA_DEF_DEF_  "Baudrate" 1000000.0126703;
+BA_ "Baudrate" 1000000;
+BA_ "NetProtected" 0;
+BA_ "NodeDescription" BU_ Unknown "";
+BA_ "NodeCanPort" BU_ Unknown "CAN 2";
+BA_ "NodeDescription" BU_ CAN_2 "";
+BA_ "NodeCanPort" BU_ CAN_2 "CAN 2";
+BA_ "MsgReceiveTimeout" BO_ 1711 0;
+BA_ "MsgTimeoutStatusChannel" BO_ 1711 "RM2_GPS_Info Timeout";
+BA_ "GenMsgCycleTime" BO_ 1711 10;
+BA_ "MsgReceiveTimeout" BO_ 280 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 280 "BSU2_Cmd Timeout";
+BA_ "GenMsgCycleTime" BO_ 280 5;
+BA_ "MsgReceiveTimeout" BO_ 281 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 281 "BSU2_Msg_01 Timeout";
+BA_ "GenMsgCycleTime" BO_ 281 5;
+BA_ "MsgReceiveTimeout" BO_ 1441 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 1441 "";
+BA_ "GenMsgCycleTime" BO_ 1441 5;
+BA_ "MsgReceiveTimeout" BO_ 1442 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 1442 "";
+BA_ "GenMsgCycleTime" BO_ 1442 5;
+BA_ "MsgReceiveTimeout" BO_ 513 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 513 "BSU2_Status_01 Timeout";
+BA_ "GenMsgCycleTime" BO_ 513 5;
+BA_ "MsgReceiveTimeout" BO_ 545 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 545 "BSU2_CBA_Status_FL Timeout";
+BA_ "GenMsgCycleTime" BO_ 545 5;
+BA_ "MsgReceiveTimeout" BO_ 546 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 546 "BSU2_CBA_Status_FR Timeout";
+BA_ "GenMsgCycleTime" BO_ 546 5;
+BA_ "MsgReceiveTimeout" BO_ 547 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 547 "BSU2_CBA_Status_RL Timeout";
+BA_ "GenMsgCycleTime" BO_ 547 5;
+BA_ "MsgReceiveTimeout" BO_ 548 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 548 "BSU2_CBA_Status_RR Timeout";
+BA_ "GenMsgCycleTime" BO_ 548 5;
+BA_ "MsgReceiveTimeout" BO_ 336 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 336 "BSU2_DiagnosticWord_01 Timeout";
+BA_ "GenMsgCycleTime" BO_ 336 5;
+BA_ "MsgReceiveTimeout" BO_ 338 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 338 "BSU2_DiagnosticWord_02 Timeout";
+BA_ "GenMsgCycleTime" BO_ 338 5;
+BA_ "MsgReceiveTimeout" BO_ 337 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 337 "BSU2_EM_Status_01 Timeout";
+BA_ "GenMsgCycleTime" BO_ 337 5;
+BA_ "MsgReceiveTimeout" BO_ 549 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 549 "BSU2_ICE_Status_01 Timeout";
+BA_ "GenMsgCycleTime" BO_ 549 5;
+BA_ "MsgReceiveTimeout" BO_ 550 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 550 "BSU2_ICE_Status_02 Timeout";
+BA_ "GenMsgCycleTime" BO_ 550 5;
+BA_ "MsgReceiveTimeout" BO_ 561 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 561 "BSU2_PDUs_Status_01 Timeout";
+BA_ "GenMsgCycleTime" BO_ 561 5;
+BA_ "MsgReceiveTimeout" BO_ 529 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 529 "BSU2_PSA_Status_01 Timeout";
+BA_ "GenMsgCycleTime" BO_ 529 5;
+BA_ "MsgReceiveTimeout" BO_ 530 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 530 "BSU2_PSA_Status_02 Timeout";
+BA_ "GenMsgCycleTime" BO_ 530 5;
+BA_ "MsgReceiveTimeout" BO_ 339 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 339 "BSU2_RC_Status_01 Timeout";
+BA_ "GenMsgCycleTime" BO_ 339 5;
+BA_ "MsgReceiveTimeout" BO_ 1457 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 1457 "";
+BA_ "GenMsgCycleTime" BO_ 1457 1000;
+BA_ "MsgReceiveTimeout" BO_ 1458 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 1458 "";
+BA_ "GenMsgCycleTime" BO_ 1458 1000;
+BA_ "MsgReceiveTimeout" BO_ 1459 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 1459 "";
+BA_ "GenMsgCycleTime" BO_ 1459 1000;
+BA_ "MsgReceiveTimeout" BO_ 321 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 321 "BSU2_Wheels_Speed_01 Timeout";
+BA_ "GenMsgCycleTime" BO_ 321 5;
+BA_ "MsgReceiveTimeout" BO_ 800 0;
+BA_ "MsgTimeoutStatusChannel" BO_ 800 "BSU2_RM_BSUReq_1 Timeout";
+BA_ "GenMsgCycleTime" BO_ 800 10;
+BA_ "MsgReceiveTimeout" BO_ 132 0;
+BA_ "MsgTimeoutStatusChannel" BO_ 132 "RM2_GPS_Latitude Timeout";
+BA_ "GenMsgCycleTime" BO_ 132 10;
+BA_ "MsgReceiveTimeout" BO_ 134 0;
+BA_ "MsgTimeoutStatusChannel" BO_ 134 "RM2_GPS_Info Timeout";
+BA_ "GenMsgCycleTime" BO_ 134 10;
+BA_ "MsgReceiveTimeout" BO_ 133 0;
+BA_ "MsgTimeoutStatusChannel" BO_ 133 "RM2_GPS_Longitude Timeout";
+BA_ "GenMsgCycleTime" BO_ 133 10;
+BA_ "MsgReceiveTimeout" BO_ 138 0;
+BA_ "MsgTimeoutStatusChannel" BO_ 138 "RM2_SM_RawAcc Timeout";
+BA_ "GenMsgCycleTime" BO_ 138 10;
+BA_ "MsgReceiveTimeout" BO_ 126 0;
+BA_ "MsgTimeoutStatusChannel" BO_ 126 "RM2_Accident_Severity Timeout";
+BA_ "GenMsgCycleTime" BO_ 126 10;
+BA_ "MsgReceiveTimeout" BO_ 148 0;
+BA_ "MsgTimeoutStatusChannel" BO_ 148 "RM2_SM_Radio_Diags Timeout";
+BA_ "GenMsgCycleTime" BO_ 148 10;
+BA_ "MsgReceiveTimeout" BO_ 124 0;
+BA_ "MsgTimeoutStatusChannel" BO_ 124 "RM2_Flag_Info_Output Timeout";
+BA_ "GenMsgCycleTime" BO_ 124 10;
+BA_ "MsgReceiveTimeout" BO_ 257 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 257 "HL_Msg_01 Timeout";
+BA_ "GenMsgCycleTime" BO_ 257 5;
+BA_ "MsgReceiveTimeout" BO_ 258 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 258 "HL_Msg_02 Timeout";
+BA_ "GenMsgCycleTime" BO_ 258 5;
+BA_ "MsgReceiveTimeout" BO_ 259 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 259 "HL_Msg_03 Timeout";
+BA_ "GenMsgCycleTime" BO_ 259 5;
+BA_ "MsgReceiveTimeout" BO_ 273 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 273 "HL_Trajectory_01 Timeout";
+BA_ "GenMsgCycleTime" BO_ 273 5;
+BA_ "MsgReceiveTimeout" BO_ 274 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 274 "HL_Trajectory_02 Timeout";
+BA_ "GenMsgCycleTime" BO_ 274 5;
+BA_ "MsgReceiveTimeout" BO_ 260 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 260 "HL_Msg_04 Timeout";
+BA_ "GenMsgCycleTime" BO_ 260 5;
+BA_ "MsgReceiveTimeout" BO_ 261 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 261 "HL_Msg_05 Timeout";
+BA_ "GenMsgCycleTime" BO_ 261 5;
+BA_ "MsgReceiveTimeout" BO_ 262 1;
+BA_ "MsgTimeoutStatusChannel" BO_ 262 "HL_MSg_06 Timeout";
+BA_ "GenMsgCycleTime" BO_ 262 5;
+BA_ "MsgReceiveTimeout" BO_ 292 0;
+BA_ "MsgTimeoutStatusChannel" BO_ 292 "Motec_Msg_03 Timeout";
+BA_ "GenMsgCycleTime" BO_ 292 10;
+BA_ "MsgReceiveTimeout" BO_ 291 0;
+BA_ "MsgTimeoutStatusChannel" BO_ 291 "Motec_Msg_Warning Timeout";
+BA_ "GenMsgCycleTime" BO_ 291 10;
+BA_ "MsgReceiveTimeout" BO_ 290 0;
+BA_ "MsgTimeoutStatusChannel" BO_ 290 "Motec_Msg_State Timeout";
+BA_ "GenMsgCycleTime" BO_ 290 10;
+BA_ "MsgReceiveTimeout" BO_ 289 0;
+BA_ "MsgTimeoutStatusChannel" BO_ 289 "Motec_Msg_02 Timeout";
+BA_ "GenMsgCycleTime" BO_ 289 10;
+BA_ "MsgReceiveTimeout" BO_ 288 0;
+BA_ "MsgTimeoutStatusChannel" BO_ 288 "Motec_Msg_01 Timeout";
+BA_ "GenMsgCycleTime" BO_ 288 10;
+BA_ "MsgReceiveTimeout" BO_ 1280 0;
+BA_ "MsgTimeoutStatusChannel" BO_ 1280 "";
+BA_ "GenMsgCycleTime" BO_ 1280 100;
+BA_ "MsgReceiveTimeout" BO_ 1296 0;
+BA_ "MsgTimeoutStatusChannel" BO_ 1296 "";
+BA_ "GenMsgCycleTime" BO_ 1296 100;
+BA_ "MsgReceiveTimeout" BO_ 1312 0;
+BA_ "MsgTimeoutStatusChannel" BO_ 1312 "";
+BA_ "GenMsgCycleTime" BO_ 1312 1000;
+BA_ "MsgReceiveTimeout" BO_ 1313 0;
+BA_ "MsgTimeoutStatusChannel" BO_ 1313 "";
+BA_ "GenMsgCycleTime" BO_ 1313 1000;
+BA_ "MsgReceiveTimeout" BO_ 1314 0;
+BA_ "MsgTimeoutStatusChannel" BO_ 1314 "";
+BA_ "GenMsgCycleTime" BO_ 1314 1000;
+BA_ "GenSigStartValue" SG_ 1711 RM_SM_5BOutputData 0;
+BA_ "SigProtected" SG_ 280 BSU_TargetThrottle2_mV 0;
+BA_ "SigClass" SG_ 280 BSU_TargetThrottle2_mV 2;
+BA_ "SigTimeoutBehavior" SG_ 280 BSU_TargetThrottle2_mV 0;
+BA_ "GenSigStartValue" SG_ 280 BSU_TargetThrottle2_mV 0;
+BA_ "BitNumbering" SG_ 280 BSU_TargetThrottle2_mV 1;
+BA_ "SigProtected" SG_ 280 BSU_TargetThrottle1_mV 0;
+BA_ "SigClass" SG_ 280 BSU_TargetThrottle1_mV 2;
+BA_ "SigTimeoutBehavior" SG_ 280 BSU_TargetThrottle1_mV 0;
+BA_ "GenSigStartValue" SG_ 280 BSU_TargetThrottle1_mV 0;
+BA_ "BitNumbering" SG_ 280 BSU_TargetThrottle1_mV 1;
+BA_ "SigProtected" SG_ 280 BSU_TargetGear_Down 0;
+BA_ "SigClass" SG_ 280 BSU_TargetGear_Down 2;
+BA_ "SigTimeoutBehavior" SG_ 280 BSU_TargetGear_Down 0;
+BA_ "GenSigStartValue" SG_ 280 BSU_TargetGear_Down 0;
+BA_ "BitNumbering" SG_ 280 BSU_TargetGear_Down 1;
+BA_ "SigProtected" SG_ 280 BSU_TargetGear_Up 0;
+BA_ "SigClass" SG_ 280 BSU_TargetGear_Up 2;
+BA_ "SigTimeoutBehavior" SG_ 280 BSU_TargetGear_Up 0;
+BA_ "GenSigStartValue" SG_ 280 BSU_TargetGear_Up 0;
+BA_ "BitNumbering" SG_ 280 BSU_TargetGear_Up 1;
+BA_ "SigProtected" SG_ 280 BSU_PitSpeedLimiter_ON 0;
+BA_ "SigClass" SG_ 280 BSU_PitSpeedLimiter_ON 2;
+BA_ "SigTimeoutBehavior" SG_ 280 BSU_PitSpeedLimiter_ON 0;
+BA_ "GenSigStartValue" SG_ 280 BSU_PitSpeedLimiter_ON 0;
+BA_ "BitNumbering" SG_ 280 BSU_PitSpeedLimiter_ON 1;
+BA_ "SigProtected" SG_ 280 BSU_ThrotteTestMode 0;
+BA_ "SigClass" SG_ 280 BSU_ThrotteTestMode 2;
+BA_ "SigTimeoutBehavior" SG_ 280 BSU_ThrotteTestMode 0;
+BA_ "GenSigStartValue" SG_ 280 BSU_ThrotteTestMode 0;
+BA_ "BitNumbering" SG_ 280 BSU_ThrotteTestMode 1;
+BA_ "SigProtected" SG_ 280 BSU_TractionControl 0;
+BA_ "SigClass" SG_ 280 BSU_TractionControl 2;
+BA_ "SigTimeoutBehavior" SG_ 280 BSU_TractionControl 0;
+BA_ "GenSigStartValue" SG_ 280 BSU_TractionControl 0;
+BA_ "BitNumbering" SG_ 280 BSU_TractionControl 1;
+BA_ "SigProtected" SG_ 280 BSU_APS_Compressor_ON 0;
+BA_ "SigClass" SG_ 280 BSU_APS_Compressor_ON 2;
+BA_ "SigTimeoutBehavior" SG_ 280 BSU_APS_Compressor_ON 0;
+BA_ "GenSigStartValue" SG_ 280 BSU_APS_Compressor_ON 0;
+BA_ "BitNumbering" SG_ 280 BSU_APS_Compressor_ON 1;
+BA_ "SigProtected" SG_ 280 BSU_EngineSwitchON 0;
+BA_ "SigClass" SG_ 280 BSU_EngineSwitchON 2;
+BA_ "SigTimeoutBehavior" SG_ 280 BSU_EngineSwitchON 0;
+BA_ "GenSigStartValue" SG_ 280 BSU_EngineSwitchON 0;
+BA_ "BitNumbering" SG_ 280 BSU_EngineSwitchON 1;
+BA_ "SigProtected" SG_ 280 BSU_PushToPass_ON 0;
+BA_ "SigClass" SG_ 280 BSU_PushToPass_ON 2;
+BA_ "SigTimeoutBehavior" SG_ 280 BSU_PushToPass_ON 0;
+BA_ "GenSigStartValue" SG_ 280 BSU_PushToPass_ON 0;
+BA_ "BitNumbering" SG_ 280 BSU_PushToPass_ON 1;
+BA_ "SigProtected" SG_ 280 BSU_FuelPumps_SwitchedON 0;
+BA_ "SigClass" SG_ 280 BSU_FuelPumps_SwitchedON 2;
+BA_ "SigTimeoutBehavior" SG_ 280 BSU_FuelPumps_SwitchedON 0;
+BA_ "GenSigStartValue" SG_ 280 BSU_FuelPumps_SwitchedON 0;
+BA_ "BitNumbering" SG_ 280 BSU_FuelPumps_SwitchedON 1;
+BA_ "SigProtected" SG_ 281 BSU_SteeringAngle 0;
+BA_ "SigClass" SG_ 281 BSU_SteeringAngle 2;
+BA_ "SigTimeoutBehavior" SG_ 281 BSU_SteeringAngle 0;
+BA_ "GenSigStartValue" SG_ 281 BSU_SteeringAngle 0;
+BA_ "BitNumbering" SG_ 281 BSU_SteeringAngle 1;
+BA_ "SigProtected" SG_ 281 BSU_BrakePressure_RR 0;
+BA_ "SigClass" SG_ 281 BSU_BrakePressure_RR 2;
+BA_ "SigTimeoutBehavior" SG_ 281 BSU_BrakePressure_RR 0;
+BA_ "GenSigStartValue" SG_ 281 BSU_BrakePressure_RR 0;
+BA_ "BitNumbering" SG_ 281 BSU_BrakePressure_RR 1;
+BA_ "SigProtected" SG_ 281 BSU_BrakePressure_RL 0;
+BA_ "SigClass" SG_ 281 BSU_BrakePressure_RL 2;
+BA_ "SigTimeoutBehavior" SG_ 281 BSU_BrakePressure_RL 0;
+BA_ "GenSigStartValue" SG_ 281 BSU_BrakePressure_RL 0;
+BA_ "BitNumbering" SG_ 281 BSU_BrakePressure_RL 1;
+BA_ "SigProtected" SG_ 281 BSU_BrakePressure_FR 0;
+BA_ "SigClass" SG_ 281 BSU_BrakePressure_FR 2;
+BA_ "SigTimeoutBehavior" SG_ 281 BSU_BrakePressure_FR 0;
+BA_ "GenSigStartValue" SG_ 281 BSU_BrakePressure_FR 0;
+BA_ "BitNumbering" SG_ 281 BSU_BrakePressure_FR 1;
+BA_ "SigProtected" SG_ 281 BSU_BrakePressure_FL 0;
+BA_ "SigClass" SG_ 281 BSU_BrakePressure_FL 2;
+BA_ "SigTimeoutBehavior" SG_ 281 BSU_BrakePressure_FL 0;
+BA_ "GenSigStartValue" SG_ 281 BSU_BrakePressure_FL 0;
+BA_ "BitNumbering" SG_ 281 BSU_BrakePressure_FL 1;
+BA_ "SigProtected" SG_ 1441 BSU_ICE_MinThrottle 0;
+BA_ "SigClass" SG_ 1441 BSU_ICE_MinThrottle 2;
+BA_ "SigTimeoutBehavior" SG_ 1441 BSU_ICE_MinThrottle 0;
+BA_ "GenSigStartValue" SG_ 1441 BSU_ICE_MinThrottle 0;
+BA_ "BitNumbering" SG_ 1441 BSU_ICE_MinThrottle 1;
+BA_ "SigProtected" SG_ 1441 BSU_ICE_MaxThrottle 0;
+BA_ "SigClass" SG_ 1441 BSU_ICE_MaxThrottle 2;
+BA_ "SigTimeoutBehavior" SG_ 1441 BSU_ICE_MaxThrottle 0;
+BA_ "GenSigStartValue" SG_ 1441 BSU_ICE_MaxThrottle 0;
+BA_ "BitNumbering" SG_ 1441 BSU_ICE_MaxThrottle 1;
+BA_ "SigProtected" SG_ 1441 BSU_CBA_MinPress_RR_Pa 0;
+BA_ "SigClass" SG_ 1441 BSU_CBA_MinPress_RR_Pa 2;
+BA_ "SigTimeoutBehavior" SG_ 1441 BSU_CBA_MinPress_RR_Pa 0;
+BA_ "GenSigStartValue" SG_ 1441 BSU_CBA_MinPress_RR_Pa 0;
+BA_ "BitNumbering" SG_ 1441 BSU_CBA_MinPress_RR_Pa 1;
+BA_ "SigProtected" SG_ 1441 BSU_CBA_MaxPress_RR_Pa 0;
+BA_ "SigClass" SG_ 1441 BSU_CBA_MaxPress_RR_Pa 2;
+BA_ "SigTimeoutBehavior" SG_ 1441 BSU_CBA_MaxPress_RR_Pa 0;
+BA_ "GenSigStartValue" SG_ 1441 BSU_CBA_MaxPress_RR_Pa 0;
+BA_ "BitNumbering" SG_ 1441 BSU_CBA_MaxPress_RR_Pa 1;
+BA_ "SigProtected" SG_ 1441 BSU_CBA_MinPress_RL_Pa 0;
+BA_ "SigClass" SG_ 1441 BSU_CBA_MinPress_RL_Pa 2;
+BA_ "SigTimeoutBehavior" SG_ 1441 BSU_CBA_MinPress_RL_Pa 0;
+BA_ "GenSigStartValue" SG_ 1441 BSU_CBA_MinPress_RL_Pa 0;
+BA_ "BitNumbering" SG_ 1441 BSU_CBA_MinPress_RL_Pa 1;
+BA_ "SigProtected" SG_ 1441 BSU_CBA_MaxPress_RL_Pa 0;
+BA_ "SigClass" SG_ 1441 BSU_CBA_MaxPress_RL_Pa 2;
+BA_ "SigTimeoutBehavior" SG_ 1441 BSU_CBA_MaxPress_RL_Pa 0;
+BA_ "GenSigStartValue" SG_ 1441 BSU_CBA_MaxPress_RL_Pa 0;
+BA_ "BitNumbering" SG_ 1441 BSU_CBA_MaxPress_RL_Pa 1;
+BA_ "SigProtected" SG_ 1441 BSU_CBA_MinPress_FR_Pa 0;
+BA_ "SigClass" SG_ 1441 BSU_CBA_MinPress_FR_Pa 2;
+BA_ "SigTimeoutBehavior" SG_ 1441 BSU_CBA_MinPress_FR_Pa 0;
+BA_ "GenSigStartValue" SG_ 1441 BSU_CBA_MinPress_FR_Pa 0;
+BA_ "BitNumbering" SG_ 1441 BSU_CBA_MinPress_FR_Pa 1;
+BA_ "SigProtected" SG_ 1441 BSU_CBA_MaxPress_FR_Pa 0;
+BA_ "SigClass" SG_ 1441 BSU_CBA_MaxPress_FR_Pa 2;
+BA_ "SigTimeoutBehavior" SG_ 1441 BSU_CBA_MaxPress_FR_Pa 0;
+BA_ "GenSigStartValue" SG_ 1441 BSU_CBA_MaxPress_FR_Pa 0;
+BA_ "BitNumbering" SG_ 1441 BSU_CBA_MaxPress_FR_Pa 1;
+BA_ "SigProtected" SG_ 1441 BSU_CBA_MinPress_FL_Pa 0;
+BA_ "SigClass" SG_ 1441 BSU_CBA_MinPress_FL_Pa 2;
+BA_ "SigTimeoutBehavior" SG_ 1441 BSU_CBA_MinPress_FL_Pa 0;
+BA_ "GenSigStartValue" SG_ 1441 BSU_CBA_MinPress_FL_Pa 0;
+BA_ "BitNumbering" SG_ 1441 BSU_CBA_MinPress_FL_Pa 1;
+BA_ "SigProtected" SG_ 1441 BSU_CBA_MaxPress_FL_Pa 0;
+BA_ "SigClass" SG_ 1441 BSU_CBA_MaxPress_FL_Pa 2;
+BA_ "SigTimeoutBehavior" SG_ 1441 BSU_CBA_MaxPress_FL_Pa 0;
+BA_ "GenSigStartValue" SG_ 1441 BSU_CBA_MaxPress_FL_Pa 0;
+BA_ "BitNumbering" SG_ 1441 BSU_CBA_MaxPress_FL_Pa 1;
+BA_ "SigProtected" SG_ 1442 BSU_PSA_MaxTorque_mNm 0;
+BA_ "SigClass" SG_ 1442 BSU_PSA_MaxTorque_mNm 2;
+BA_ "SigTimeoutBehavior" SG_ 1442 BSU_PSA_MaxTorque_mNm 0;
+BA_ "GenSigStartValue" SG_ 1442 BSU_PSA_MaxTorque_mNm 0;
+BA_ "BitNumbering" SG_ 1442 BSU_PSA_MaxTorque_mNm 1;
+BA_ "SigProtected" SG_ 1442 BSU_PSA_MinTorque_mNm 0;
+BA_ "SigClass" SG_ 1442 BSU_PSA_MinTorque_mNm 2;
+BA_ "SigTimeoutBehavior" SG_ 1442 BSU_PSA_MinTorque_mNm 0;
+BA_ "GenSigStartValue" SG_ 1442 BSU_PSA_MinTorque_mNm 0;
+BA_ "BitNumbering" SG_ 1442 BSU_PSA_MinTorque_mNm 1;
+BA_ "SigProtected" SG_ 1442 BSU_PSA_MaxAngleSpeed 0;
+BA_ "SigClass" SG_ 1442 BSU_PSA_MaxAngleSpeed 2;
+BA_ "SigTimeoutBehavior" SG_ 1442 BSU_PSA_MaxAngleSpeed 0;
+BA_ "GenSigStartValue" SG_ 1442 BSU_PSA_MaxAngleSpeed 0;
+BA_ "BitNumbering" SG_ 1442 BSU_PSA_MaxAngleSpeed 1;
+BA_ "SigProtected" SG_ 1442 BSU_PSA_MinAngleSpeed 0;
+BA_ "SigClass" SG_ 1442 BSU_PSA_MinAngleSpeed 2;
+BA_ "SigTimeoutBehavior" SG_ 1442 BSU_PSA_MinAngleSpeed 0;
+BA_ "GenSigStartValue" SG_ 1442 BSU_PSA_MinAngleSpeed 0;
+BA_ "BitNumbering" SG_ 1442 BSU_PSA_MinAngleSpeed 1;
+BA_ "SigProtected" SG_ 1442 BSU_PSA_MaxAngle_rad 0;
+BA_ "SigClass" SG_ 1442 BSU_PSA_MaxAngle_rad 2;
+BA_ "SigTimeoutBehavior" SG_ 1442 BSU_PSA_MaxAngle_rad 0;
+BA_ "GenSigStartValue" SG_ 1442 BSU_PSA_MaxAngle_rad 0;
+BA_ "BitNumbering" SG_ 1442 BSU_PSA_MaxAngle_rad 1;
+BA_ "SigProtected" SG_ 1442 BSU_PSA_MinAngle_rad 0;
+BA_ "SigClass" SG_ 1442 BSU_PSA_MinAngle_rad 2;
+BA_ "SigTimeoutBehavior" SG_ 1442 BSU_PSA_MinAngle_rad 0;
+BA_ "GenSigStartValue" SG_ 1442 BSU_PSA_MinAngle_rad 0;
+BA_ "BitNumbering" SG_ 1442 BSU_PSA_MinAngle_rad 1;
+BA_ "SigProtected" SG_ 513 BSU_ABS_ExternalEnable_Ack 0;
+BA_ "SigClass" SG_ 513 BSU_ABS_ExternalEnable_Ack 2;
+BA_ "SigTimeoutBehavior" SG_ 513 BSU_ABS_ExternalEnable_Ack 0;
+BA_ "GenSigStartValue" SG_ 513 BSU_ABS_ExternalEnable_Ack 0;
+BA_ "BitNumbering" SG_ 513 BSU_ABS_ExternalEnable_Ack 1;
+BA_ "SigProtected" SG_ 513 BSU_Status 0;
+BA_ "SigClass" SG_ 513 BSU_Status 2;
+BA_ "SigTimeoutBehavior" SG_ 513 BSU_Status 0;
+BA_ "GenSigStartValue" SG_ 513 BSU_Status 0;
+BA_ "BitNumbering" SG_ 513 BSU_Status 1;
+BA_ "SigProtected" SG_ 513 BSU_AliveCounter 0;
+BA_ "SigClass" SG_ 513 BSU_AliveCounter 2;
+BA_ "SigTimeoutBehavior" SG_ 513 BSU_AliveCounter 0;
+BA_ "GenSigStartValue" SG_ 513 BSU_AliveCounter 0;
+BA_ "BitNumbering" SG_ 513 BSU_AliveCounter 1;
+BA_ "SigProtected" SG_ 513 BSU_SwitchOFF_Req 0;
+BA_ "SigClass" SG_ 513 BSU_SwitchOFF_Req 2;
+BA_ "SigTimeoutBehavior" SG_ 513 BSU_SwitchOFF_Req 0;
+BA_ "GenSigStartValue" SG_ 513 BSU_SwitchOFF_Req 0;
+BA_ "BitNumbering" SG_ 513 BSU_SwitchOFF_Req 1;
+BA_ "SigProtected" SG_ 513 BSU_LimpMode_Activated 0;
+BA_ "SigClass" SG_ 513 BSU_LimpMode_Activated 2;
+BA_ "SigTimeoutBehavior" SG_ 513 BSU_LimpMode_Activated 0;
+BA_ "GenSigStartValue" SG_ 513 BSU_LimpMode_Activated 0;
+BA_ "BitNumbering" SG_ 513 BSU_LimpMode_Activated 1;
+BA_ "SigProtected" SG_ 513 BSU_HL_StopRequest 0;
+BA_ "SigClass" SG_ 513 BSU_HL_StopRequest 2;
+BA_ "SigTimeoutBehavior" SG_ 513 BSU_HL_StopRequest 0;
+BA_ "GenSigStartValue" SG_ 513 BSU_HL_StopRequest 0;
+BA_ "BitNumbering" SG_ 513 BSU_HL_StopRequest 1;
+BA_ "SigProtected" SG_ 513 BSU_HL_Warning 0;
+BA_ "SigClass" SG_ 513 BSU_HL_Warning 2;
+BA_ "SigTimeoutBehavior" SG_ 513 BSU_HL_Warning 0;
+BA_ "GenSigStartValue" SG_ 513 BSU_HL_Warning 0;
+BA_ "BitNumbering" SG_ 513 BSU_HL_Warning 1;
+BA_ "SigProtected" SG_ 513 BSU_EM_Stop_Activated 0;
+BA_ "SigClass" SG_ 513 BSU_EM_Stop_Activated 2;
+BA_ "SigTimeoutBehavior" SG_ 513 BSU_EM_Stop_Activated 0;
+BA_ "GenSigStartValue" SG_ 513 BSU_EM_Stop_Activated 0;
+BA_ "BitNumbering" SG_ 513 BSU_EM_Stop_Activated 1;
+BA_ "SigProtected" SG_ 513 BSU_ML_Stop_Activated 0;
+BA_ "SigClass" SG_ 513 BSU_ML_Stop_Activated 2;
+BA_ "SigTimeoutBehavior" SG_ 513 BSU_ML_Stop_Activated 0;
+BA_ "GenSigStartValue" SG_ 513 BSU_ML_Stop_Activated 0;
+BA_ "BitNumbering" SG_ 513 BSU_ML_Stop_Activated 1;
+BA_ "SigProtected" SG_ 545 BSU_CBA_Voltage_FL_V 0;
+BA_ "SigClass" SG_ 545 BSU_CBA_Voltage_FL_V 2;
+BA_ "SigTimeoutBehavior" SG_ 545 BSU_CBA_Voltage_FL_V 0;
+BA_ "GenSigStartValue" SG_ 545 BSU_CBA_Voltage_FL_V 0;
+BA_ "BitNumbering" SG_ 545 BSU_CBA_Voltage_FL_V 1;
+BA_ "SigProtected" SG_ 545 BSU_CBA_ActualCurr_FL_A 0;
+BA_ "SigClass" SG_ 545 BSU_CBA_ActualCurr_FL_A 2;
+BA_ "SigTimeoutBehavior" SG_ 545 BSU_CBA_ActualCurr_FL_A 0;
+BA_ "GenSigStartValue" SG_ 545 BSU_CBA_ActualCurr_FL_A 0;
+BA_ "BitNumbering" SG_ 545 BSU_CBA_ActualCurr_FL_A 1;
+BA_ "SigProtected" SG_ 545 BSU_CBA_TargPress_FL_ACK 0;
+BA_ "SigClass" SG_ 545 BSU_CBA_TargPress_FL_ACK 2;
+BA_ "SigTimeoutBehavior" SG_ 545 BSU_CBA_TargPress_FL_ACK 0;
+BA_ "GenSigStartValue" SG_ 545 BSU_CBA_TargPress_FL_ACK 0;
+BA_ "BitNumbering" SG_ 545 BSU_CBA_TargPress_FL_ACK 1;
+BA_ "SigProtected" SG_ 545 BSU_CBA_ActualPress_FL 0;
+BA_ "SigClass" SG_ 545 BSU_CBA_ActualPress_FL 2;
+BA_ "SigTimeoutBehavior" SG_ 545 BSU_CBA_ActualPress_FL 0;
+BA_ "GenSigStartValue" SG_ 545 BSU_CBA_ActualPress_FL 0;
+BA_ "BitNumbering" SG_ 545 BSU_CBA_ActualPress_FL 1;
+BA_ "SigProtected" SG_ 545 BSU_CBA_ActPress_FL_Pa 0;
+BA_ "SigClass" SG_ 545 BSU_CBA_ActPress_FL_Pa 2;
+BA_ "SigTimeoutBehavior" SG_ 545 BSU_CBA_ActPress_FL_Pa 0;
+BA_ "GenSigStartValue" SG_ 545 BSU_CBA_ActPress_FL_Pa 0;
+BA_ "BitNumbering" SG_ 545 BSU_CBA_ActPress_FL_Pa 1;
+BA_ "SigProtected" SG_ 546 BSU_CBA_Voltage_FR_V 0;
+BA_ "SigClass" SG_ 546 BSU_CBA_Voltage_FR_V 2;
+BA_ "SigTimeoutBehavior" SG_ 546 BSU_CBA_Voltage_FR_V 0;
+BA_ "GenSigStartValue" SG_ 546 BSU_CBA_Voltage_FR_V 0;
+BA_ "BitNumbering" SG_ 546 BSU_CBA_Voltage_FR_V 1;
+BA_ "SigProtected" SG_ 546 BSU_CBA_ActualCurr_FR_A 0;
+BA_ "SigClass" SG_ 546 BSU_CBA_ActualCurr_FR_A 2;
+BA_ "SigTimeoutBehavior" SG_ 546 BSU_CBA_ActualCurr_FR_A 0;
+BA_ "GenSigStartValue" SG_ 546 BSU_CBA_ActualCurr_FR_A 0;
+BA_ "BitNumbering" SG_ 546 BSU_CBA_ActualCurr_FR_A 1;
+BA_ "SigProtected" SG_ 546 BSU_CBA_TargPress_FR_ACK 0;
+BA_ "SigClass" SG_ 546 BSU_CBA_TargPress_FR_ACK 2;
+BA_ "SigTimeoutBehavior" SG_ 546 BSU_CBA_TargPress_FR_ACK 0;
+BA_ "GenSigStartValue" SG_ 546 BSU_CBA_TargPress_FR_ACK 0;
+BA_ "BitNumbering" SG_ 546 BSU_CBA_TargPress_FR_ACK 1;
+BA_ "SigProtected" SG_ 546 BSU_CBA_ActualPress_FR 0;
+BA_ "SigClass" SG_ 546 BSU_CBA_ActualPress_FR 2;
+BA_ "SigTimeoutBehavior" SG_ 546 BSU_CBA_ActualPress_FR 0;
+BA_ "GenSigStartValue" SG_ 546 BSU_CBA_ActualPress_FR 0;
+BA_ "BitNumbering" SG_ 546 BSU_CBA_ActualPress_FR 1;
+BA_ "SigProtected" SG_ 546 BSU_CBA_ActPress_FR_Pa 0;
+BA_ "SigClass" SG_ 546 BSU_CBA_ActPress_FR_Pa 2;
+BA_ "SigTimeoutBehavior" SG_ 546 BSU_CBA_ActPress_FR_Pa 0;
+BA_ "GenSigStartValue" SG_ 546 BSU_CBA_ActPress_FR_Pa 0;
+BA_ "BitNumbering" SG_ 546 BSU_CBA_ActPress_FR_Pa 1;
+BA_ "SigProtected" SG_ 547 BSU_CBA_Voltage_RL_V 0;
+BA_ "SigClass" SG_ 547 BSU_CBA_Voltage_RL_V 2;
+BA_ "SigTimeoutBehavior" SG_ 547 BSU_CBA_Voltage_RL_V 0;
+BA_ "GenSigStartValue" SG_ 547 BSU_CBA_Voltage_RL_V 0;
+BA_ "BitNumbering" SG_ 547 BSU_CBA_Voltage_RL_V 1;
+BA_ "SigProtected" SG_ 547 BSU_CBA_ActualCurr_RL_A 0;
+BA_ "SigClass" SG_ 547 BSU_CBA_ActualCurr_RL_A 2;
+BA_ "SigTimeoutBehavior" SG_ 547 BSU_CBA_ActualCurr_RL_A 0;
+BA_ "GenSigStartValue" SG_ 547 BSU_CBA_ActualCurr_RL_A 0;
+BA_ "BitNumbering" SG_ 547 BSU_CBA_ActualCurr_RL_A 1;
+BA_ "SigProtected" SG_ 547 BSU_CBA_TargPress_RL_ACK 0;
+BA_ "SigClass" SG_ 547 BSU_CBA_TargPress_RL_ACK 2;
+BA_ "SigTimeoutBehavior" SG_ 547 BSU_CBA_TargPress_RL_ACK 0;
+BA_ "GenSigStartValue" SG_ 547 BSU_CBA_TargPress_RL_ACK 0;
+BA_ "BitNumbering" SG_ 547 BSU_CBA_TargPress_RL_ACK 1;
+BA_ "SigProtected" SG_ 547 BSU_CBA_ActualPress_RL 0;
+BA_ "SigClass" SG_ 547 BSU_CBA_ActualPress_RL 2;
+BA_ "SigTimeoutBehavior" SG_ 547 BSU_CBA_ActualPress_RL 0;
+BA_ "GenSigStartValue" SG_ 547 BSU_CBA_ActualPress_RL 0;
+BA_ "BitNumbering" SG_ 547 BSU_CBA_ActualPress_RL 1;
+BA_ "SigProtected" SG_ 547 BSU_CBA_ActPress_RL_Pa 0;
+BA_ "SigClass" SG_ 547 BSU_CBA_ActPress_RL_Pa 2;
+BA_ "SigTimeoutBehavior" SG_ 547 BSU_CBA_ActPress_RL_Pa 0;
+BA_ "GenSigStartValue" SG_ 547 BSU_CBA_ActPress_RL_Pa 0;
+BA_ "BitNumbering" SG_ 547 BSU_CBA_ActPress_RL_Pa 1;
+BA_ "SigProtected" SG_ 548 BSU_CBA_Voltage_RR_V 0;
+BA_ "SigClass" SG_ 548 BSU_CBA_Voltage_RR_V 2;
+BA_ "SigTimeoutBehavior" SG_ 548 BSU_CBA_Voltage_RR_V 0;
+BA_ "GenSigStartValue" SG_ 548 BSU_CBA_Voltage_RR_V 0;
+BA_ "BitNumbering" SG_ 548 BSU_CBA_Voltage_RR_V 1;
+BA_ "SigProtected" SG_ 548 BSU_CBA_ActualCurr_RR_A 0;
+BA_ "SigClass" SG_ 548 BSU_CBA_ActualCurr_RR_A 2;
+BA_ "SigTimeoutBehavior" SG_ 548 BSU_CBA_ActualCurr_RR_A 0;
+BA_ "GenSigStartValue" SG_ 548 BSU_CBA_ActualCurr_RR_A 0;
+BA_ "BitNumbering" SG_ 548 BSU_CBA_ActualCurr_RR_A 1;
+BA_ "SigProtected" SG_ 548 BSU_CBA_TargPress_RR_ACK 0;
+BA_ "SigClass" SG_ 548 BSU_CBA_TargPress_RR_ACK 2;
+BA_ "SigTimeoutBehavior" SG_ 548 BSU_CBA_TargPress_RR_ACK 0;
+BA_ "GenSigStartValue" SG_ 548 BSU_CBA_TargPress_RR_ACK 0;
+BA_ "BitNumbering" SG_ 548 BSU_CBA_TargPress_RR_ACK 1;
+BA_ "SigProtected" SG_ 548 BSU_CBA_ActualPress_RR 0;
+BA_ "SigClass" SG_ 548 BSU_CBA_ActualPress_RR 2;
+BA_ "SigTimeoutBehavior" SG_ 548 BSU_CBA_ActualPress_RR 0;
+BA_ "GenSigStartValue" SG_ 548 BSU_CBA_ActualPress_RR 0;
+BA_ "BitNumbering" SG_ 548 BSU_CBA_ActualPress_RR 1;
+BA_ "SigProtected" SG_ 548 BSU_CBA_ActPress_RR_Pa 0;
+BA_ "SigClass" SG_ 548 BSU_CBA_ActPress_RR_Pa 2;
+BA_ "SigTimeoutBehavior" SG_ 548 BSU_CBA_ActPress_RR_Pa 0;
+BA_ "GenSigStartValue" SG_ 548 BSU_CBA_ActPress_RR_Pa 0;
+BA_ "BitNumbering" SG_ 548 BSU_CBA_ActPress_RR_Pa 1;
+BA_ "GenSigStartValue" SG_ 336 PSA_SteerSlip_Warning 0;
+BA_ "GenSigStartValue" SG_ 336 PDU12_Active_AntiFire 0;
+BA_ "GenSigStartValue" SG_ 336 MLStop_Conditions_Active 0;
+BA_ "GenSigStartValue" SG_ 336 EMStop_Conditions_Active 0;
+BA_ "GenSigStartValue" SG_ 336 DEM_CBARR_NotReceive 0;
+BA_ "GenSigStartValue" SG_ 336 DEM_CBARL_NotReceive 0;
+BA_ "GenSigStartValue" SG_ 336 DEM_CBAFR_NotReceive 0;
+BA_ "GenSigStartValue" SG_ 336 DEM_PDU12V_NotReceive 0;
+BA_ "GenSigStartValue" SG_ 336 DEM_CBAFL_NotReceive 0;
+BA_ "GenSigStartValue" SG_ 336 ICE_GearLowOilTemp_Warning 0;
+BA_ "GenSigStartValue" SG_ 336 RM_TimeoutError 0;
+BA_ "GenSigStartValue" SG_ 336 RM_CounterError 0;
+BA_ "GenSigStartValue" SG_ 336 ICE_FuelVolume_Warning 0;
+BA_ "GenSigStartValue" SG_ 336 ICE_TargetGearNotReached_Warning 0;
+BA_ "GenSigStartValue" SG_ 336 ICE_SensorFailure_Warning 0;
+BA_ "GenSigStartValue" SG_ 336 ICE_OilTemperature_Warning 0;
+BA_ "GenSigStartValue" SG_ 336 ICE_OilPressure_Warning 0;
+BA_ "GenSigStartValue" SG_ 336 ICE_GearOilTemperature_Warning 0;
+BA_ "GenSigStartValue" SG_ 336 ICE_FuelPressure_Warning 0;
+BA_ "GenSigStartValue" SG_ 336 ICE_CoolantTemperature_Warning 0;
+BA_ "GenSigStartValue" SG_ 336 ICE_CoolantPressure_Warning 0;
+BA_ "GenSigStartValue" SG_ 336 ICE_Boost_Warning 0;
+BA_ "GenSigStartValue" SG_ 336 BSU_WrongInitConfig 0;
+BA_ "GenSigStartValue" SG_ 336 ICEOverride_WrongConfig 0;
+BA_ "GenSigStartValue" SG_ 336 DCDC4812_UnderMinStartLimit 0;
+BA_ "GenSigStartValue" SG_ 336 PSA_TimeoutError 0;
+BA_ "GenSigStartValue" SG_ 336 PSA_Error 0;
+BA_ "GenSigStartValue" SG_ 336 PSA_Derating 0;
+BA_ "GenSigStartValue" SG_ 336 PSA_CounterError 0;
+BA_ "GenSigStartValue" SG_ 336 PDU48_TimeoutError 0;
+BA_ "GenSigStartValue" SG_ 336 PDU48_CounterError 0;
+BA_ "GenSigStartValue" SG_ 336 PDU12_TimeoutError 0;
+BA_ "GenSigStartValue" SG_ 336 PDU12_CounterError 0;
+BA_ "GenSigStartValue" SG_ 336 ICE_OilTemp_UnderMinStartLimit 0;
+BA_ "GenSigStartValue" SG_ 336 ICE_TimeoutError 0;
+BA_ "GenSigStartValue" SG_ 336 ICE_CounterError 0;
+BA_ "GenSigStartValue" SG_ 336 CAN_2_TimeoutError 0;
+BA_ "GenSigStartValue" SG_ 336 CAN_2_CounterError 0;
+BA_ "GenSigStartValue" SG_ 336 ICE_APS_Warning 0;
+BA_ "GenSigStartValue" SG_ 336 ICE_Starting_StartingFailed 0;
+BA_ "GenSigStartValue" SG_ 336 ICE_Starting_OilHeaterFailed 0;
+BA_ "GenSigStartValue" SG_ 336 ICE_Starting_FuelingFailed 0;
+BA_ "GenSigStartValue" SG_ 336 ICE_EngineOffRejected 0;
+BA_ "GenSigStartValue" SG_ 336 ECU_Timeout_EM_fault 0;
+BA_ "GenSigStartValue" SG_ 336 DCDC_TimeoutError 0;
+BA_ "GenSigStartValue" SG_ 336 DCDC_StartingFaild 0;
+BA_ "GenSigStartValue" SG_ 336 CBA_RR_TimeoutError 0;
+BA_ "GenSigStartValue" SG_ 336 CBA_RR_Error 0;
+BA_ "GenSigStartValue" SG_ 336 CBA_RR_Derating 0;
+BA_ "GenSigStartValue" SG_ 336 CBA_RR_CounterError 0;
+BA_ "GenSigStartValue" SG_ 336 CBA_RL_TimeoutError 0;
+BA_ "GenSigStartValue" SG_ 336 CBA_RL_Error 0;
+BA_ "GenSigStartValue" SG_ 336 CBA_RL_Derating 0;
+BA_ "GenSigStartValue" SG_ 336 CBA_RL_CounterError 0;
+BA_ "GenSigStartValue" SG_ 336 CBA_FR_TimeoutError 0;
+BA_ "GenSigStartValue" SG_ 336 CBA_FR_Error 0;
+BA_ "GenSigStartValue" SG_ 336 CBA_FR_Derating 0;
+BA_ "GenSigStartValue" SG_ 336 CBA_FR_CounterError 0;
+BA_ "GenSigStartValue" SG_ 336 CBA_FL_TimeoutError 0;
+BA_ "GenSigStartValue" SG_ 336 CBA_FL_Error 0;
+BA_ "GenSigStartValue" SG_ 336 CBA_FL_Derating 0;
+BA_ "GenSigStartValue" SG_ 336 CBA_FL_CounterError 0;
+BA_ "GenSigStartValue" SG_ 336 BMS_TimeoutError 0;
+BA_ "GenSigStartValue" SG_ 336 BMS_StartingFaild 0;
+BA_ "GenSigStartValue" SG_ 338 RM_EMFlag 0;
+BA_ "GenSigStartValue" SG_ 338 MLStop_BrakeBias_DefVal 0;
+BA_ "GenSigStartValue" SG_ 338 LimpICE_SatValues_DefVal 0;
+BA_ "GenSigStartValue" SG_ 338 CBA_SatRates_DefVal 0;
+BA_ "GenSigStartValue" SG_ 338 PSA_SatRates_DefVal 0;
+BA_ "GenSigStartValue" SG_ 338 ICE_OilTempByPass_DefVal 0;
+BA_ "GenSigStartValue" SG_ 338 ICE_FuelPresStartLimit_DefVal 0;
+BA_ "GenSigStartValue" SG_ 338 Heater_OilTempMaxValue_DefVal 0;
+BA_ "GenSigStartValue" SG_ 338 FAN_WaterTempMinValue_DefVal 0;
+BA_ "GenSigStartValue" SG_ 338 FAN_WaterTempMaxValue_DefVal 0;
+BA_ "GenSigStartValue" SG_ 338 FAN_CarSpeedMinValue_DefVal 0;
+BA_ "GenSigStartValue" SG_ 338 FAN_CarSpeedMaxValue_DefVal 0;
+BA_ "GenSigStartValue" SG_ 338 LimpCBA_SatValues_DefVal 0;
+BA_ "GenSigStartValue" SG_ 338 PSA_SatValues_DefVal 0;
+BA_ "GenSigStartValue" SG_ 338 MLStop_BrakeSat_DefVal 0;
+BA_ "GenSigStartValue" SG_ 338 ICE_OilTempStartLimit_DefVal 0;
+BA_ "GenSigStartValue" SG_ 338 CBA_SatValues_DefVal 0;
+BA_ "GenSigStartValue" SG_ 338 CBA_EMBrakeSat_DefVal 0;
+BA_ "GenSigStartValue" SG_ 338 Display_CounterError 0;
+BA_ "GenSigStartValue" SG_ 338 RM_SafeStop 0;
+BA_ "GenSigStartValue" SG_ 338 RM_RedFlag 0;
+BA_ "GenSigStartValue" SG_ 338 Display_TimeoutError 0;
+BA_ "GenSigStartValue" SG_ 338 RC_Beacon_TimeOut 0;
+BA_ "GenSigStartValue" SG_ 338 RC_ForceRaceMode 0;
+BA_ "SigProtected" SG_ 337 BSU_HLStop_TimeToDec_2 0;
+BA_ "SigClass" SG_ 337 BSU_HLStop_TimeToDec_2 2;
+BA_ "SigTimeoutBehavior" SG_ 337 BSU_HLStop_TimeToDec_2 0;
+BA_ "GenSigStartValue" SG_ 337 BSU_HLStop_TimeToDec_2 0;
+BA_ "BitNumbering" SG_ 337 BSU_HLStop_TimeToDec_2 1;
+BA_ "SigProtected" SG_ 337 BSU_HLStop_TimeToDec_1 0;
+BA_ "SigClass" SG_ 337 BSU_HLStop_TimeToDec_1 2;
+BA_ "SigTimeoutBehavior" SG_ 337 BSU_HLStop_TimeToDec_1 0;
+BA_ "GenSigStartValue" SG_ 337 BSU_HLStop_TimeToDec_1 0;
+BA_ "BitNumbering" SG_ 337 BSU_HLStop_TimeToDec_1 1;
+BA_ "SigProtected" SG_ 337 BSU_HLStop_Decel_2 0;
+BA_ "SigClass" SG_ 337 BSU_HLStop_Decel_2 2;
+BA_ "SigTimeoutBehavior" SG_ 337 BSU_HLStop_Decel_2 0;
+BA_ "GenSigStartValue" SG_ 337 BSU_HLStop_Decel_2 0;
+BA_ "BitNumbering" SG_ 337 BSU_HLStop_Decel_2 1;
+BA_ "SigProtected" SG_ 337 BSU_HLStop_Decel_1 0;
+BA_ "SigClass" SG_ 337 BSU_HLStop_Decel_1 2;
+BA_ "SigTimeoutBehavior" SG_ 337 BSU_HLStop_Decel_1 0;
+BA_ "GenSigStartValue" SG_ 337 BSU_HLStop_Decel_1 0;
+BA_ "BitNumbering" SG_ 337 BSU_HLStop_Decel_1 1;
+BA_ "SigProtected" SG_ 337 BSU_EM_Status 0;
+BA_ "SigClass" SG_ 337 BSU_EM_Status 2;
+BA_ "SigTimeoutBehavior" SG_ 337 BSU_EM_Status 0;
+BA_ "GenSigStartValue" SG_ 337 BSU_EM_Status 0;
+BA_ "BitNumbering" SG_ 337 BSU_EM_Status 1;
+BA_ "SigProtected" SG_ 337 BSU_EMB_DC4812_Voltage 0;
+BA_ "SigClass" SG_ 337 BSU_EMB_DC4812_Voltage 2;
+BA_ "SigTimeoutBehavior" SG_ 337 BSU_EMB_DC4812_Voltage 0;
+BA_ "GenSigStartValue" SG_ 337 BSU_EMB_DC4812_Voltage 0;
+BA_ "BitNumbering" SG_ 337 BSU_EMB_DC4812_Voltage 1;
+BA_ "SigProtected" SG_ 549 BSU_ICE_Downshift_Available 0;
+BA_ "SigClass" SG_ 549 BSU_ICE_Downshift_Available 2;
+BA_ "SigTimeoutBehavior" SG_ 549 BSU_ICE_Downshift_Available 0;
+BA_ "GenSigStartValue" SG_ 549 BSU_ICE_Downshift_Available 0;
+BA_ "BitNumbering" SG_ 549 BSU_ICE_Downshift_Available 1;
+BA_ "SigProtected" SG_ 549 BSU_ICE_AvailableFuel_l 0;
+BA_ "SigClass" SG_ 549 BSU_ICE_AvailableFuel_l 2;
+BA_ "SigTimeoutBehavior" SG_ 549 BSU_ICE_AvailableFuel_l 0;
+BA_ "GenSigStartValue" SG_ 549 BSU_ICE_AvailableFuel_l 0;
+BA_ "BitNumbering" SG_ 549 BSU_ICE_AvailableFuel_l 1;
+BA_ "SigProtected" SG_ 549 BSU_ICE_PushToPass_Req 0;
+BA_ "SigClass" SG_ 549 BSU_ICE_PushToPass_Req 2;
+BA_ "SigTimeoutBehavior" SG_ 549 BSU_ICE_PushToPass_Req 0;
+BA_ "GenSigStartValue" SG_ 549 BSU_ICE_PushToPass_Req 0;
+BA_ "BitNumbering" SG_ 549 BSU_ICE_PushToPass_Req 1;
+BA_ "SigProtected" SG_ 549 BSU_ICE_PushToPass_ACK 0;
+BA_ "SigClass" SG_ 549 BSU_ICE_PushToPass_ACK 2;
+BA_ "SigTimeoutBehavior" SG_ 549 BSU_ICE_PushToPass_ACK 0;
+BA_ "GenSigStartValue" SG_ 549 BSU_ICE_PushToPass_ACK 0;
+BA_ "BitNumbering" SG_ 549 BSU_ICE_PushToPass_ACK 1;
+BA_ "SigProtected" SG_ 549 BSU_ICE_WaterPress_kPa 0;
+BA_ "SigClass" SG_ 549 BSU_ICE_WaterPress_kPa 2;
+BA_ "SigTimeoutBehavior" SG_ 549 BSU_ICE_WaterPress_kPa 0;
+BA_ "GenSigStartValue" SG_ 549 BSU_ICE_WaterPress_kPa 0;
+BA_ "BitNumbering" SG_ 549 BSU_ICE_WaterPress_kPa 1;
+BA_ "SigProtected" SG_ 549 BSU_ICE_TargThrottle_ACK 0;
+BA_ "SigClass" SG_ 549 BSU_ICE_TargThrottle_ACK 2;
+BA_ "SigTimeoutBehavior" SG_ 549 BSU_ICE_TargThrottle_ACK 0;
+BA_ "GenSigStartValue" SG_ 549 BSU_ICE_TargThrottle_ACK 0;
+BA_ "BitNumbering" SG_ 549 BSU_ICE_TargThrottle_ACK 1;
+BA_ "SigProtected" SG_ 549 BSU_ICE_ActualThrottle 0;
+BA_ "SigClass" SG_ 549 BSU_ICE_ActualThrottle 2;
+BA_ "SigTimeoutBehavior" SG_ 549 BSU_ICE_ActualThrottle 0;
+BA_ "GenSigStartValue" SG_ 549 BSU_ICE_ActualThrottle 0;
+BA_ "BitNumbering" SG_ 549 BSU_ICE_ActualThrottle 1;
+BA_ "SigProtected" SG_ 549 BSU_ICE_ActualGear 0;
+BA_ "SigClass" SG_ 549 BSU_ICE_ActualGear 2;
+BA_ "SigTimeoutBehavior" SG_ 549 BSU_ICE_ActualGear 0;
+BA_ "GenSigStartValue" SG_ 549 BSU_ICE_ActualGear 0;
+BA_ "BitNumbering" SG_ 549 BSU_ICE_ActualGear 1;
+BA_ "SigProtected" SG_ 549 BSU_ICE_TargetGear_ACK 0;
+BA_ "SigClass" SG_ 549 BSU_ICE_TargetGear_ACK 2;
+BA_ "SigTimeoutBehavior" SG_ 549 BSU_ICE_TargetGear_ACK 0;
+BA_ "GenSigStartValue" SG_ 549 BSU_ICE_TargetGear_ACK 0;
+BA_ "BitNumbering" SG_ 549 BSU_ICE_TargetGear_ACK 1;
+BA_ "SigProtected" SG_ 550 BSU_ICE_OilPress_kPa 0;
+BA_ "SigClass" SG_ 550 BSU_ICE_OilPress_kPa 2;
+BA_ "SigTimeoutBehavior" SG_ 550 BSU_ICE_OilPress_kPa 0;
+BA_ "GenSigStartValue" SG_ 550 BSU_ICE_OilPress_kPa 0;
+BA_ "BitNumbering" SG_ 550 BSU_ICE_OilPress_kPa 1;
+BA_ "SigProtected" SG_ 550 BSU_ICE_WaterTemp_degC 0;
+BA_ "SigClass" SG_ 550 BSU_ICE_WaterTemp_degC 2;
+BA_ "SigTimeoutBehavior" SG_ 550 BSU_ICE_WaterTemp_degC 0;
+BA_ "GenSigStartValue" SG_ 550 BSU_ICE_WaterTemp_degC 0;
+BA_ "BitNumbering" SG_ 550 BSU_ICE_WaterTemp_degC 1;
+BA_ "SigProtected" SG_ 550 BSU_ICE_FuelPress_kPa 0;
+BA_ "SigClass" SG_ 550 BSU_ICE_FuelPress_kPa 2;
+BA_ "SigTimeoutBehavior" SG_ 550 BSU_ICE_FuelPress_kPa 0;
+BA_ "GenSigStartValue" SG_ 550 BSU_ICE_FuelPress_kPa 0;
+BA_ "BitNumbering" SG_ 550 BSU_ICE_FuelPress_kPa 1;
+BA_ "SigProtected" SG_ 550 BSU_ICE_EngineSpeed_rpm 0;
+BA_ "SigClass" SG_ 550 BSU_ICE_EngineSpeed_rpm 2;
+BA_ "SigTimeoutBehavior" SG_ 550 BSU_ICE_EngineSpeed_rpm 0;
+BA_ "GenSigStartValue" SG_ 550 BSU_ICE_EngineSpeed_rpm 0;
+BA_ "BitNumbering" SG_ 550 BSU_ICE_EngineSpeed_rpm 1;
+BA_ "SigProtected" SG_ 550 BSU_ICE_OilTemp_degC 0;
+BA_ "SigClass" SG_ 550 BSU_ICE_OilTemp_degC 2;
+BA_ "SigTimeoutBehavior" SG_ 550 BSU_ICE_OilTemp_degC 0;
+BA_ "GenSigStartValue" SG_ 550 BSU_ICE_OilTemp_degC 0;
+BA_ "BitNumbering" SG_ 550 BSU_ICE_OilTemp_degC 1;
+BA_ "SigProtected" SG_ 561 BSU_PDU48_Total_Curr_A 0;
+BA_ "SigClass" SG_ 561 BSU_PDU48_Total_Curr_A 2;
+BA_ "SigTimeoutBehavior" SG_ 561 BSU_PDU48_Total_Curr_A 0;
+BA_ "GenSigStartValue" SG_ 561 BSU_PDU48_Total_Curr_A 0;
+BA_ "BitNumbering" SG_ 561 BSU_PDU48_Total_Curr_A 1;
+BA_ "SigProtected" SG_ 561 BSU_PDU48_PwrSupply_Volt 0;
+BA_ "SigClass" SG_ 561 BSU_PDU48_PwrSupply_Volt 2;
+BA_ "SigTimeoutBehavior" SG_ 561 BSU_PDU48_PwrSupply_Volt 0;
+BA_ "GenSigStartValue" SG_ 561 BSU_PDU48_PwrSupply_Volt 0;
+BA_ "BitNumbering" SG_ 561 BSU_PDU48_PwrSupply_Volt 1;
+BA_ "SigProtected" SG_ 561 BSU_PDU12_TotalCurrent_A 0;
+BA_ "SigClass" SG_ 561 BSU_PDU12_TotalCurrent_A 2;
+BA_ "SigTimeoutBehavior" SG_ 561 BSU_PDU12_TotalCurrent_A 0;
+BA_ "GenSigStartValue" SG_ 561 BSU_PDU12_TotalCurrent_A 0;
+BA_ "BitNumbering" SG_ 561 BSU_PDU12_TotalCurrent_A 1;
+BA_ "SigProtected" SG_ 561 BSU_PDU12_PwrSupply_Volt 0;
+BA_ "SigClass" SG_ 561 BSU_PDU12_PwrSupply_Volt 2;
+BA_ "SigTimeoutBehavior" SG_ 561 BSU_PDU12_PwrSupply_Volt 0;
+BA_ "GenSigStartValue" SG_ 561 BSU_PDU12_PwrSupply_Volt 0;
+BA_ "BitNumbering" SG_ 561 BSU_PDU12_PwrSupply_Volt 1;
+BA_ "SigProtected" SG_ 529 BSU_PSA_ActualVoltage_V 0;
+BA_ "SigClass" SG_ 529 BSU_PSA_ActualVoltage_V 2;
+BA_ "SigTimeoutBehavior" SG_ 529 BSU_PSA_ActualVoltage_V 0;
+BA_ "GenSigStartValue" SG_ 529 BSU_PSA_ActualVoltage_V 0;
+BA_ "BitNumbering" SG_ 529 BSU_PSA_ActualVoltage_V 1;
+BA_ "SigProtected" SG_ 529 BSU_PSA_ActualModeOfOperation 0;
+BA_ "SigClass" SG_ 529 BSU_PSA_ActualModeOfOperation 2;
+BA_ "SigTimeoutBehavior" SG_ 529 BSU_PSA_ActualModeOfOperation 0;
+BA_ "GenSigStartValue" SG_ 529 BSU_PSA_ActualModeOfOperation 0;
+BA_ "BitNumbering" SG_ 529 BSU_PSA_ActualModeOfOperation 1;
+BA_ "SigProtected" SG_ 529 BSU_PSA_ActualCurrent_A 0;
+BA_ "SigClass" SG_ 529 BSU_PSA_ActualCurrent_A 2;
+BA_ "SigTimeoutBehavior" SG_ 529 BSU_PSA_ActualCurrent_A 0;
+BA_ "GenSigStartValue" SG_ 529 BSU_PSA_ActualCurrent_A 0;
+BA_ "BitNumbering" SG_ 529 BSU_PSA_ActualCurrent_A 1;
+BA_ "SigProtected" SG_ 529 BSU_PSA_ActualTorque_mNm 0;
+BA_ "SigClass" SG_ 529 BSU_PSA_ActualTorque_mNm 2;
+BA_ "SigTimeoutBehavior" SG_ 529 BSU_PSA_ActualTorque_mNm 0;
+BA_ "GenSigStartValue" SG_ 529 BSU_PSA_ActualTorque_mNm 0;
+BA_ "BitNumbering" SG_ 529 BSU_PSA_ActualTorque_mNm 1;
+BA_ "SigProtected" SG_ 529 BSU_PSA_ActualSpeed_rads 0;
+BA_ "SigClass" SG_ 529 BSU_PSA_ActualSpeed_rads 2;
+BA_ "SigTimeoutBehavior" SG_ 529 BSU_PSA_ActualSpeed_rads 0;
+BA_ "GenSigStartValue" SG_ 529 BSU_PSA_ActualSpeed_rads 0;
+BA_ "BitNumbering" SG_ 529 BSU_PSA_ActualSpeed_rads 1;
+BA_ "SigProtected" SG_ 529 BSU_PSA_ActualPos_rad 0;
+BA_ "SigClass" SG_ 529 BSU_PSA_ActualPos_rad 2;
+BA_ "SigTimeoutBehavior" SG_ 529 BSU_PSA_ActualPos_rad 0;
+BA_ "GenSigStartValue" SG_ 529 BSU_PSA_ActualPos_rad 0;
+BA_ "BitNumbering" SG_ 529 BSU_PSA_ActualPos_rad 1;
+BA_ "SigProtected" SG_ 530 BSU_PSA_ActualTorque 0;
+BA_ "SigClass" SG_ 530 BSU_PSA_ActualTorque 2;
+BA_ "SigTimeoutBehavior" SG_ 530 BSU_PSA_ActualTorque 0;
+BA_ "GenSigStartValue" SG_ 530 BSU_PSA_ActualTorque 0;
+BA_ "BitNumbering" SG_ 530 BSU_PSA_ActualTorque 1;
+BA_ "SigProtected" SG_ 530 BSU_PSA_ActualSpeed 0;
+BA_ "SigClass" SG_ 530 BSU_PSA_ActualSpeed 2;
+BA_ "SigTimeoutBehavior" SG_ 530 BSU_PSA_ActualSpeed 0;
+BA_ "GenSigStartValue" SG_ 530 BSU_PSA_ActualSpeed 0;
+BA_ "BitNumbering" SG_ 530 BSU_PSA_ActualSpeed 1;
+BA_ "SigProtected" SG_ 530 BSU_PSA_ActualPos 0;
+BA_ "SigClass" SG_ 530 BSU_PSA_ActualPos 2;
+BA_ "SigTimeoutBehavior" SG_ 530 BSU_PSA_ActualPos 0;
+BA_ "GenSigStartValue" SG_ 530 BSU_PSA_ActualPos 0;
+BA_ "BitNumbering" SG_ 530 BSU_PSA_ActualPos 1;
+BA_ "SigProtected" SG_ 530 BSU_PSA_TargPSACtrl_ACK 0;
+BA_ "SigClass" SG_ 530 BSU_PSA_TargPSACtrl_ACK 2;
+BA_ "SigTimeoutBehavior" SG_ 530 BSU_PSA_TargPSACtrl_ACK 0;
+BA_ "GenSigStartValue" SG_ 530 BSU_PSA_TargPSACtrl_ACK 0;
+BA_ "BitNumbering" SG_ 530 BSU_PSA_TargPSACtrl_ACK 1;
+BA_ "SigProtected" SG_ 339 BSU_RC_SectorFlag 0;
+BA_ "SigClass" SG_ 339 BSU_RC_SectorFlag 2;
+BA_ "SigTimeoutBehavior" SG_ 339 BSU_RC_SectorFlag 0;
+BA_ "GenSigStartValue" SG_ 339 BSU_RC_SectorFlag 0;
+BA_ "BitNumbering" SG_ 339 BSU_RC_SectorFlag 1;
+BA_ "SigProtected" SG_ 339 BSU_RC_TrackFlag 0;
+BA_ "SigClass" SG_ 339 BSU_RC_TrackFlag 2;
+BA_ "SigTimeoutBehavior" SG_ 339 BSU_RC_TrackFlag 0;
+BA_ "GenSigStartValue" SG_ 339 BSU_RC_TrackFlag 0;
+BA_ "BitNumbering" SG_ 339 BSU_RC_TrackFlag 1;
+BA_ "SigProtected" SG_ 339 BSU_RC_CarFlag 0;
+BA_ "SigClass" SG_ 339 BSU_RC_CarFlag 2;
+BA_ "SigTimeoutBehavior" SG_ 339 BSU_RC_CarFlag 0;
+BA_ "GenSigStartValue" SG_ 339 BSU_RC_CarFlag 0;
+BA_ "BitNumbering" SG_ 339 BSU_RC_CarFlag 1;
+BA_ "SigProtected" SG_ 339 BSU_RC_SessionType 0;
+BA_ "SigClass" SG_ 339 BSU_RC_SessionType 2;
+BA_ "SigTimeoutBehavior" SG_ 339 BSU_RC_SessionType 0;
+BA_ "GenSigStartValue" SG_ 339 BSU_RC_SessionType 0;
+BA_ "BitNumbering" SG_ 339 BSU_RC_SessionType 1;
+BA_ "GenSigStartValue" SG_ 1710 SM_DriverAcknowlodge 0;
+BA_ "GenSigStartValue" SG_ 1710 SM_custom5BitsInputData 0;
+BA_ "SigProtected" SG_ 1457 BSU_PDU48_SW_Version 0;
+BA_ "SigClass" SG_ 1457 BSU_PDU48_SW_Version 2;
+BA_ "SigTimeoutBehavior" SG_ 1457 BSU_PDU48_SW_Version 0;
+BA_ "GenSigStartValue" SG_ 1457 BSU_PDU48_SW_Version 0;
+BA_ "BitNumbering" SG_ 1457 BSU_PDU48_SW_Version 1;
+BA_ "SigProtected" SG_ 1457 BSU_PDU12_SW_Version 0;
+BA_ "SigClass" SG_ 1457 BSU_PDU12_SW_Version 2;
+BA_ "SigTimeoutBehavior" SG_ 1457 BSU_PDU12_SW_Version 0;
+BA_ "GenSigStartValue" SG_ 1457 BSU_PDU12_SW_Version 0;
+BA_ "BitNumbering" SG_ 1457 BSU_PDU12_SW_Version 1;
+BA_ "SigProtected" SG_ 1457 BSU_PSA_SW_buildVersion 0;
+BA_ "SigClass" SG_ 1457 BSU_PSA_SW_buildVersion 2;
+BA_ "SigTimeoutBehavior" SG_ 1457 BSU_PSA_SW_buildVersion 0;
+BA_ "GenSigStartValue" SG_ 1457 BSU_PSA_SW_buildVersion 0;
+BA_ "BitNumbering" SG_ 1457 BSU_PSA_SW_buildVersion 1;
+BA_ "SigProtected" SG_ 1457 BSU_PSA_SW_minorVersion 0;
+BA_ "SigClass" SG_ 1457 BSU_PSA_SW_minorVersion 2;
+BA_ "SigTimeoutBehavior" SG_ 1457 BSU_PSA_SW_minorVersion 0;
+BA_ "GenSigStartValue" SG_ 1457 BSU_PSA_SW_minorVersion 0;
+BA_ "BitNumbering" SG_ 1457 BSU_PSA_SW_minorVersion 1;
+BA_ "SigProtected" SG_ 1457 BSU_PSA_SW_MajorVersion 0;
+BA_ "SigClass" SG_ 1457 BSU_PSA_SW_MajorVersion 2;
+BA_ "SigTimeoutBehavior" SG_ 1457 BSU_PSA_SW_MajorVersion 0;
+BA_ "GenSigStartValue" SG_ 1457 BSU_PSA_SW_MajorVersion 0;
+BA_ "BitNumbering" SG_ 1457 BSU_PSA_SW_MajorVersion 1;
+BA_ "SigProtected" SG_ 1457 BSU_BSU_SW_buildVersion 0;
+BA_ "SigClass" SG_ 1457 BSU_BSU_SW_buildVersion 2;
+BA_ "SigTimeoutBehavior" SG_ 1457 BSU_BSU_SW_buildVersion 0;
+BA_ "GenSigStartValue" SG_ 1457 BSU_BSU_SW_buildVersion 0;
+BA_ "BitNumbering" SG_ 1457 BSU_BSU_SW_buildVersion 1;
+BA_ "SigProtected" SG_ 1457 BSU_SW_minorVersion 0;
+BA_ "SigClass" SG_ 1457 BSU_SW_minorVersion 2;
+BA_ "SigTimeoutBehavior" SG_ 1457 BSU_SW_minorVersion 0;
+BA_ "GenSigStartValue" SG_ 1457 BSU_SW_minorVersion 0;
+BA_ "BitNumbering" SG_ 1457 BSU_SW_minorVersion 1;
+BA_ "SigProtected" SG_ 1457 BSU_SW_MajorVersion 0;
+BA_ "SigClass" SG_ 1457 BSU_SW_MajorVersion 2;
+BA_ "SigTimeoutBehavior" SG_ 1457 BSU_SW_MajorVersion 0;
+BA_ "GenSigStartValue" SG_ 1457 BSU_SW_MajorVersion 0;
+BA_ "BitNumbering" SG_ 1457 BSU_SW_MajorVersion 1;
+BA_ "SigProtected" SG_ 1458 BSU_CBA_FR_SW_buildVersion 0;
+BA_ "SigClass" SG_ 1458 BSU_CBA_FR_SW_buildVersion 2;
+BA_ "SigTimeoutBehavior" SG_ 1458 BSU_CBA_FR_SW_buildVersion 0;
+BA_ "GenSigStartValue" SG_ 1458 BSU_CBA_FR_SW_buildVersion 0;
+BA_ "BitNumbering" SG_ 1458 BSU_CBA_FR_SW_buildVersion 1;
+BA_ "SigProtected" SG_ 1458 BSU_CBA_FR_SW_minorVersion 0;
+BA_ "SigClass" SG_ 1458 BSU_CBA_FR_SW_minorVersion 2;
+BA_ "SigTimeoutBehavior" SG_ 1458 BSU_CBA_FR_SW_minorVersion 0;
+BA_ "GenSigStartValue" SG_ 1458 BSU_CBA_FR_SW_minorVersion 0;
+BA_ "BitNumbering" SG_ 1458 BSU_CBA_FR_SW_minorVersion 1;
+BA_ "SigProtected" SG_ 1458 BSU_CBA_FR_SW_MajorVersion 0;
+BA_ "SigClass" SG_ 1458 BSU_CBA_FR_SW_MajorVersion 2;
+BA_ "SigTimeoutBehavior" SG_ 1458 BSU_CBA_FR_SW_MajorVersion 0;
+BA_ "GenSigStartValue" SG_ 1458 BSU_CBA_FR_SW_MajorVersion 0;
+BA_ "BitNumbering" SG_ 1458 BSU_CBA_FR_SW_MajorVersion 1;
+BA_ "SigProtected" SG_ 1458 BSU_CBA_FL_SW_buildVersion 0;
+BA_ "SigClass" SG_ 1458 BSU_CBA_FL_SW_buildVersion 2;
+BA_ "SigTimeoutBehavior" SG_ 1458 BSU_CBA_FL_SW_buildVersion 0;
+BA_ "GenSigStartValue" SG_ 1458 BSU_CBA_FL_SW_buildVersion 0;
+BA_ "BitNumbering" SG_ 1458 BSU_CBA_FL_SW_buildVersion 1;
+BA_ "SigProtected" SG_ 1458 BSU_CBA_FL_SW_minorVersion 0;
+BA_ "SigClass" SG_ 1458 BSU_CBA_FL_SW_minorVersion 2;
+BA_ "SigTimeoutBehavior" SG_ 1458 BSU_CBA_FL_SW_minorVersion 0;
+BA_ "GenSigStartValue" SG_ 1458 BSU_CBA_FL_SW_minorVersion 0;
+BA_ "BitNumbering" SG_ 1458 BSU_CBA_FL_SW_minorVersion 1;
+BA_ "SigProtected" SG_ 1458 BSU_CBA_FL_SW_MajorVersion 0;
+BA_ "SigClass" SG_ 1458 BSU_CBA_FL_SW_MajorVersion 2;
+BA_ "SigTimeoutBehavior" SG_ 1458 BSU_CBA_FL_SW_MajorVersion 0;
+BA_ "GenSigStartValue" SG_ 1458 BSU_CBA_FL_SW_MajorVersion 0;
+BA_ "BitNumbering" SG_ 1458 BSU_CBA_FL_SW_MajorVersion 1;
+BA_ "SigProtected" SG_ 1459 BSU_CBA_RR_SW_buildVersion 0;
+BA_ "SigClass" SG_ 1459 BSU_CBA_RR_SW_buildVersion 2;
+BA_ "SigTimeoutBehavior" SG_ 1459 BSU_CBA_RR_SW_buildVersion 0;
+BA_ "GenSigStartValue" SG_ 1459 BSU_CBA_RR_SW_buildVersion 0;
+BA_ "BitNumbering" SG_ 1459 BSU_CBA_RR_SW_buildVersion 1;
+BA_ "SigProtected" SG_ 1459 BSU_CBA_RR_SW_minorVersion 0;
+BA_ "SigClass" SG_ 1459 BSU_CBA_RR_SW_minorVersion 2;
+BA_ "SigTimeoutBehavior" SG_ 1459 BSU_CBA_RR_SW_minorVersion 0;
+BA_ "GenSigStartValue" SG_ 1459 BSU_CBA_RR_SW_minorVersion 0;
+BA_ "BitNumbering" SG_ 1459 BSU_CBA_RR_SW_minorVersion 1;
+BA_ "SigProtected" SG_ 1459 BSU_CBA_RR_SW_MajorVersion 0;
+BA_ "SigClass" SG_ 1459 BSU_CBA_RR_SW_MajorVersion 2;
+BA_ "SigTimeoutBehavior" SG_ 1459 BSU_CBA_RR_SW_MajorVersion 0;
+BA_ "GenSigStartValue" SG_ 1459 BSU_CBA_RR_SW_MajorVersion 0;
+BA_ "BitNumbering" SG_ 1459 BSU_CBA_RR_SW_MajorVersion 1;
+BA_ "SigProtected" SG_ 1459 BSU_CBA_RL_SW_buildVersion 0;
+BA_ "SigClass" SG_ 1459 BSU_CBA_RL_SW_buildVersion 2;
+BA_ "SigTimeoutBehavior" SG_ 1459 BSU_CBA_RL_SW_buildVersion 0;
+BA_ "GenSigStartValue" SG_ 1459 BSU_CBA_RL_SW_buildVersion 0;
+BA_ "BitNumbering" SG_ 1459 BSU_CBA_RL_SW_buildVersion 1;
+BA_ "SigProtected" SG_ 1459 BSU_CBA_RL_SW_minorVersion 0;
+BA_ "SigClass" SG_ 1459 BSU_CBA_RL_SW_minorVersion 2;
+BA_ "SigTimeoutBehavior" SG_ 1459 BSU_CBA_RL_SW_minorVersion 0;
+BA_ "GenSigStartValue" SG_ 1459 BSU_CBA_RL_SW_minorVersion 0;
+BA_ "BitNumbering" SG_ 1459 BSU_CBA_RL_SW_minorVersion 1;
+BA_ "SigProtected" SG_ 1459 BSU_CBA_RL_SW_MajorVersion 0;
+BA_ "SigClass" SG_ 1459 BSU_CBA_RL_SW_MajorVersion 2;
+BA_ "SigTimeoutBehavior" SG_ 1459 BSU_CBA_RL_SW_MajorVersion 0;
+BA_ "GenSigStartValue" SG_ 1459 BSU_CBA_RL_SW_MajorVersion 0;
+BA_ "BitNumbering" SG_ 1459 BSU_CBA_RL_SW_MajorVersion 1;
+BA_ "SigProtected" SG_ 321 BSU_WSS_Speed_RR_C2 0;
+BA_ "SigClass" SG_ 321 BSU_WSS_Speed_RR_C2 2;
+BA_ "SigTimeoutBehavior" SG_ 321 BSU_WSS_Speed_RR_C2 0;
+BA_ "GenSigStartValue" SG_ 321 BSU_WSS_Speed_RR_C2 0;
+BA_ "BitNumbering" SG_ 321 BSU_WSS_Speed_RR_C2 1;
+BA_ "SigProtected" SG_ 321 BSU_WSS_Speed_RL_C2 0;
+BA_ "SigClass" SG_ 321 BSU_WSS_Speed_RL_C2 2;
+BA_ "SigTimeoutBehavior" SG_ 321 BSU_WSS_Speed_RL_C2 0;
+BA_ "GenSigStartValue" SG_ 321 BSU_WSS_Speed_RL_C2 0;
+BA_ "BitNumbering" SG_ 321 BSU_WSS_Speed_RL_C2 1;
+BA_ "SigProtected" SG_ 321 BSU_WSS_Speed_FR_C2 0;
+BA_ "SigClass" SG_ 321 BSU_WSS_Speed_FR_C2 2;
+BA_ "SigTimeoutBehavior" SG_ 321 BSU_WSS_Speed_FR_C2 0;
+BA_ "GenSigStartValue" SG_ 321 BSU_WSS_Speed_FR_C2 0;
+BA_ "BitNumbering" SG_ 321 BSU_WSS_Speed_FR_C2 1;
+BA_ "SigProtected" SG_ 321 BSU_WSS_Speed_FL_C2 0;
+BA_ "SigClass" SG_ 321 BSU_WSS_Speed_FL_C2 2;
+BA_ "SigTimeoutBehavior" SG_ 321 BSU_WSS_Speed_FL_C2 0;
+BA_ "GenSigStartValue" SG_ 321 BSU_WSS_Speed_FL_C2 0;
+BA_ "BitNumbering" SG_ 321 BSU_WSS_Speed_FL_C2 1;
+BA_ "SigTimeoutBehavior" SG_ 800 BSU_RM_CurrentFlags_ACK 0;
+BA_ "SigProtected" SG_ 800 BSU_RM_CurrentFlags_ACK 0;
+BA_ "SigBitFieldChannel" SG_ 800 BSU_RM_CurrentFlags_ACK "BSU_RM_CurrentFlags_ACK";
+BA_ "SigClass" SG_ 800 BSU_RM_CurrentFlags_ACK 2;
+BA_ "GenSigStartValue" SG_ 800 BSU_RM_CurrentFlags_ACK 0;
+BA_ "BitNumbering" SG_ 800 BSU_RM_CurrentFlags_ACK 1;
+BA_ "SigProtected" SG_ 800 BSU_RM_AliveCounter 0;
+BA_ "SigClass" SG_ 800 BSU_RM_AliveCounter 2;
+BA_ "SigTimeoutBehavior" SG_ 800 BSU_RM_AliveCounter 0;
+BA_ "GenSigStartValue" SG_ 800 BSU_RM_AliveCounter 0;
+BA_ "BitNumbering" SG_ 800 BSU_RM_AliveCounter 1;
+BA_ "SigProtected" SG_ 132 RM_UTCTime 0;
+BA_ "SigClass" SG_ 132 RM_UTCTime 2;
+BA_ "SigTimeoutBehavior" SG_ 132 RM_UTCTime 0;
+BA_ "GenSigStartValue" SG_ 132 RM_UTCTime 0;
+BA_ "BitNumbering" SG_ 132 RM_UTCTime 1;
+BA_ "SigProtected" SG_ 132 RM_GPSLatitude 0;
+BA_ "SigClass" SG_ 132 RM_GPSLatitude 2;
+BA_ "SigTimeoutBehavior" SG_ 132 RM_GPSLatitude 0;
+BA_ "GenSigStartValue" SG_ 132 RM_GPSLatitude 0;
+BA_ "BitNumbering" SG_ 132 RM_GPSLatitude 1;
+BA_ "SigTimeoutBehavior" SG_ 134 RM_GPS_Heading 0;
+BA_ "BitNumbering" SG_ 134 RM_GPS_Heading 1;
+BA_ "SigClass" SG_ 134 RM_GPS_Heading 2;
+BA_ "SigProtected" SG_ 134 RM_GPS_Heading 0;
+BA_ "GenSigStartValue" SG_ 134 RM_GPS_Heading 0;
+BA_ "SigProtected" SG_ 134 RM_Spare2_0x86 0;
+BA_ "SigClass" SG_ 134 RM_Spare2_0x86 2;
+BA_ "SigTimeoutBehavior" SG_ 134 RM_Spare2_0x86 0;
+BA_ "GenSigStartValue" SG_ 134 RM_Spare2_0x86 0;
+BA_ "BitNumbering" SG_ 134 RM_Spare2_0x86 1;
+BA_ "SigProtected" SG_ 134 RM_GPS_Speed 0;
+BA_ "SigClass" SG_ 134 RM_GPS_Speed 2;
+BA_ "SigTimeoutBehavior" SG_ 134 RM_GPS_Speed 0;
+BA_ "GenSigStartValue" SG_ 134 RM_GPS_Speed 0;
+BA_ "BitNumbering" SG_ 134 RM_GPS_Speed 1;
+BA_ "SigProtected" SG_ 134 RM_Spare1_0x86 0;
+BA_ "SigClass" SG_ 134 RM_Spare1_0x86 2;
+BA_ "SigTimeoutBehavior" SG_ 134 RM_Spare1_0x86 0;
+BA_ "GenSigStartValue" SG_ 134 RM_Spare1_0x86 0;
+BA_ "BitNumbering" SG_ 134 RM_Spare1_0x86 1;
+BA_ "SigTimeoutBehavior" SG_ 134 RM_GPS_Status 0;
+BA_ "SigProtected" SG_ 134 RM_GPS_Status 0;
+BA_ "SigBitFieldChannel" SG_ 134 RM_GPS_Status "RM_GPS_Status";
+BA_ "SigClass" SG_ 134 RM_GPS_Status 2;
+BA_ "GenSigStartValue" SG_ 134 RM_GPS_Status 0;
+BA_ "BitNumbering" SG_ 134 RM_GPS_Status 1;
+BA_ "SigTimeoutBehavior" SG_ 133 RM_Spare3_0x85 0;
+BA_ "BitNumbering" SG_ 133 RM_Spare3_0x85 1;
+BA_ "SigClass" SG_ 133 RM_Spare3_0x85 2;
+BA_ "SigProtected" SG_ 133 RM_Spare3_0x85 0;
+BA_ "GenSigStartValue" SG_ 133 RM_Spare3_0x85 0;
+BA_ "SigTimeoutBehavior" SG_ 133 RM_Spare2_0x85 0;
+BA_ "BitNumbering" SG_ 133 RM_Spare2_0x85 1;
+BA_ "SigClass" SG_ 133 RM_Spare2_0x85 2;
+BA_ "SigProtected" SG_ 133 RM_Spare2_0x85 0;
+BA_ "GenSigStartValue" SG_ 133 RM_Spare2_0x85 0;
+BA_ "SigTimeoutBehavior" SG_ 133 RM_Spare1_0x85 0;
+BA_ "BitNumbering" SG_ 133 RM_Spare1_0x85 1;
+BA_ "SigClass" SG_ 133 RM_Spare1_0x85 2;
+BA_ "SigProtected" SG_ 133 RM_Spare1_0x85 0;
+BA_ "GenSigStartValue" SG_ 133 RM_Spare1_0x85 0;
+BA_ "SigProtected" SG_ 133 RM_Spare4_0x85 0;
+BA_ "SigClass" SG_ 133 RM_Spare4_0x85 2;
+BA_ "SigTimeoutBehavior" SG_ 133 RM_Spare4_0x85 0;
+BA_ "GenSigStartValue" SG_ 133 RM_Spare4_0x85 0;
+BA_ "BitNumbering" SG_ 133 RM_Spare4_0x85 1;
+BA_ "SigProtected" SG_ 133 RM_GPSLongitude 0;
+BA_ "SigClass" SG_ 133 RM_GPSLongitude 2;
+BA_ "SigTimeoutBehavior" SG_ 133 RM_GPSLongitude 0;
+BA_ "GenSigStartValue" SG_ 133 RM_GPSLongitude 0;
+BA_ "BitNumbering" SG_ 133 RM_GPSLongitude 1;
+BA_ "SigTimeoutBehavior" SG_ 138 RM_Acc_Z 0;
+BA_ "BitNumbering" SG_ 138 RM_Acc_Z 1;
+BA_ "SigClass" SG_ 138 RM_Acc_Z 2;
+BA_ "SigProtected" SG_ 138 RM_Acc_Z 0;
+BA_ "GenSigStartValue" SG_ 138 RM_Acc_Z 0;
+BA_ "SigProtected" SG_ 138 RM_Spare_0x8A 0;
+BA_ "SigClass" SG_ 138 RM_Spare_0x8A 2;
+BA_ "SigTimeoutBehavior" SG_ 138 RM_Spare_0x8A 0;
+BA_ "GenSigStartValue" SG_ 138 RM_Spare_0x8A 0;
+BA_ "BitNumbering" SG_ 138 RM_Spare_0x8A 1;
+BA_ "SigProtected" SG_ 138 RM_Acc_Y 0;
+BA_ "SigClass" SG_ 138 RM_Acc_Y 2;
+BA_ "SigTimeoutBehavior" SG_ 138 RM_Acc_Y 0;
+BA_ "GenSigStartValue" SG_ 138 RM_Acc_Y 0;
+BA_ "BitNumbering" SG_ 138 RM_Acc_Y 1;
+BA_ "SigProtected" SG_ 138 RM_Acc_X 0;
+BA_ "SigClass" SG_ 138 RM_Acc_X 2;
+BA_ "SigTimeoutBehavior" SG_ 138 RM_Acc_X 0;
+BA_ "GenSigStartValue" SG_ 138 RM_Acc_X 0;
+BA_ "BitNumbering" SG_ 138 RM_Acc_X 1;
+BA_ "SigProtected" SG_ 126 RM_SM_SerialNumber 0;
+BA_ "SigClass" SG_ 126 RM_SM_SerialNumber 2;
+BA_ "SigTimeoutBehavior" SG_ 126 RM_SM_SerialNumber 0;
+BA_ "GenSigStartValue" SG_ 126 RM_SM_SerialNumber 0;
+BA_ "BitNumbering" SG_ 126 RM_SM_SerialNumber 1;
+BA_ "SigProtected" SG_ 126 RM_SM_Temperature 0;
+BA_ "SigClass" SG_ 126 RM_SM_Temperature 2;
+BA_ "SigTimeoutBehavior" SG_ 126 RM_SM_Temperature 0;
+BA_ "GenSigStartValue" SG_ 126 RM_SM_Temperature 0;
+BA_ "BitNumbering" SG_ 126 RM_SM_Temperature 1;
+BA_ "SigProtected" SG_ 126 RM_Battery_SOC 0;
+BA_ "SigClass" SG_ 126 RM_Battery_SOC 2;
+BA_ "SigTimeoutBehavior" SG_ 126 RM_Battery_SOC 0;
+BA_ "GenSigStartValue" SG_ 126 RM_Battery_SOC 0;
+BA_ "BitNumbering" SG_ 126 RM_Battery_SOC 1;
+BA_ "SigProtected" SG_ 126 RM_AccidentSeverity 0;
+BA_ "SigClass" SG_ 126 RM_AccidentSeverity 2;
+BA_ "SigTimeoutBehavior" SG_ 126 RM_AccidentSeverity 0;
+BA_ "GenSigStartValue" SG_ 126 RM_AccidentSeverity 0;
+BA_ "BitNumbering" SG_ 126 RM_AccidentSeverity 1;
+BA_ "SigProtected" SG_ 148 RM_Spare_0x94 0;
+BA_ "SigClass" SG_ 148 RM_Spare_0x94 2;
+BA_ "SigTimeoutBehavior" SG_ 148 RM_Spare_0x94 0;
+BA_ "GenSigStartValue" SG_ 148 RM_Spare_0x94 0;
+BA_ "BitNumbering" SG_ 148 RM_Spare_0x94 1;
+BA_ "SigProtected" SG_ 148 RM_BS3_BeaconRSSI 0;
+BA_ "SigClass" SG_ 148 RM_BS3_BeaconRSSI 2;
+BA_ "SigTimeoutBehavior" SG_ 148 RM_BS3_BeaconRSSI 0;
+BA_ "GenSigStartValue" SG_ 148 RM_BS3_BeaconRSSI 0;
+BA_ "BitNumbering" SG_ 148 RM_BS3_BeaconRSSI 1;
+BA_ "SigProtected" SG_ 148 RM_BS2_BeaconRSSI 0;
+BA_ "SigClass" SG_ 148 RM_BS2_BeaconRSSI 2;
+BA_ "SigTimeoutBehavior" SG_ 148 RM_BS2_BeaconRSSI 0;
+BA_ "GenSigStartValue" SG_ 148 RM_BS2_BeaconRSSI 0;
+BA_ "BitNumbering" SG_ 148 RM_BS2_BeaconRSSI 1;
+BA_ "SigProtected" SG_ 148 RM_BS1_BeaconRSSI 0;
+BA_ "SigClass" SG_ 148 RM_BS1_BeaconRSSI 2;
+BA_ "SigTimeoutBehavior" SG_ 148 RM_BS1_BeaconRSSI 0;
+BA_ "GenSigStartValue" SG_ 148 RM_BS1_BeaconRSSI 0;
+BA_ "BitNumbering" SG_ 148 RM_BS1_BeaconRSSI 1;
+BA_ "SigProtected" SG_ 148 RM_BS_BeaconMask 0;
+BA_ "SigClass" SG_ 148 RM_BS_BeaconMask 2;
+BA_ "SigTimeoutBehavior" SG_ 148 RM_BS_BeaconMask 0;
+BA_ "GenSigStartValue" SG_ 148 RM_BS_BeaconMask 0;
+BA_ "BitNumbering" SG_ 148 RM_BS_BeaconMask 1;
+BA_ "SigProtected" SG_ 148 RM_BS3_BeaconReceived 0;
+BA_ "SigClass" SG_ 148 RM_BS3_BeaconReceived 2;
+BA_ "SigTimeoutBehavior" SG_ 148 RM_BS3_BeaconReceived 0;
+BA_ "GenSigStartValue" SG_ 148 RM_BS3_BeaconReceived 0;
+BA_ "BitNumbering" SG_ 148 RM_BS3_BeaconReceived 1;
+BA_ "SigProtected" SG_ 148 RM_BS2_BeaconReceived 0;
+BA_ "SigClass" SG_ 148 RM_BS2_BeaconReceived 2;
+BA_ "SigTimeoutBehavior" SG_ 148 RM_BS2_BeaconReceived 0;
+BA_ "GenSigStartValue" SG_ 148 RM_BS2_BeaconReceived 0;
+BA_ "BitNumbering" SG_ 148 RM_BS2_BeaconReceived 1;
+BA_ "SigProtected" SG_ 148 RM_BS1_BeaconReceived 0;
+BA_ "SigClass" SG_ 148 RM_BS1_BeaconReceived 2;
+BA_ "SigTimeoutBehavior" SG_ 148 RM_BS1_BeaconReceived 0;
+BA_ "GenSigStartValue" SG_ 148 RM_BS1_BeaconReceived 0;
+BA_ "BitNumbering" SG_ 148 RM_BS1_BeaconReceived 1;
+BA_ "SigProtected" SG_ 124 RM_CRC_SM 0;
+BA_ "SigClass" SG_ 124 RM_CRC_SM 2;
+BA_ "SigTimeoutBehavior" SG_ 124 RM_CRC_SM 0;
+BA_ "GenSigStartValue" SG_ 124 RM_CRC_SM 0;
+BA_ "BitNumbering" SG_ 124 RM_CRC_SM 1;
+BA_ "SigTimeoutBehavior" SG_ 124 RM_SM_Car_Flag 0;
+BA_ "SigProtected" SG_ 124 RM_SM_Car_Flag 0;
+BA_ "SigBitFieldChannel" SG_ 124 RM_SM_Car_Flag "RM_SM_Car_Flag";
+BA_ "SigClass" SG_ 124 RM_SM_Car_Flag 2;
+BA_ "GenSigStartValue" SG_ 124 RM_SM_Car_Flag 0;
+BA_ "BitNumbering" SG_ 124 RM_SM_Car_Flag 1;
+BA_ "SigTimeoutBehavior" SG_ 124 RM_SM_Track_Flag 0;
+BA_ "SigProtected" SG_ 124 RM_SM_Track_Flag 0;
+BA_ "SigBitFieldChannel" SG_ 124 RM_SM_Track_Flag "RM_SM_Track_Flag";
+BA_ "SigClass" SG_ 124 RM_SM_Track_Flag 2;
+BA_ "GenSigStartValue" SG_ 124 RM_SM_Track_Flag 0;
+BA_ "BitNumbering" SG_ 124 RM_SM_Track_Flag 1;
+BA_ "SigTimeoutBehavior" SG_ 124 RM_SM_SessionType 0;
+BA_ "SigProtected" SG_ 124 RM_SM_SessionType 0;
+BA_ "SigBitFieldChannel" SG_ 124 RM_SM_SessionType "RM_SM_SessionType";
+BA_ "SigClass" SG_ 124 RM_SM_SessionType 2;
+BA_ "GenSigStartValue" SG_ 124 RM_SM_SessionType 0;
+BA_ "BitNumbering" SG_ 124 RM_SM_SessionType 1;
+BA_ "SigProtected" SG_ 124 RM_Spare2_0x7C 0;
+BA_ "SigClass" SG_ 124 RM_Spare2_0x7C 2;
+BA_ "SigTimeoutBehavior" SG_ 124 RM_Spare2_0x7C 0;
+BA_ "GenSigStartValue" SG_ 124 RM_Spare2_0x7C 0;
+BA_ "BitNumbering" SG_ 124 RM_Spare2_0x7C 1;
+BA_ "SigProtected" SG_ 124 RM_Spare1_0x7C 0;
+BA_ "SigClass" SG_ 124 RM_Spare1_0x7C 2;
+BA_ "SigTimeoutBehavior" SG_ 124 RM_Spare1_0x7C 0;
+BA_ "GenSigStartValue" SG_ 124 RM_Spare1_0x7C 0;
+BA_ "BitNumbering" SG_ 124 RM_Spare1_0x7C 1;
+BA_ "SigProtected" SG_ 124 RM_FreeRunningCounter 0;
+BA_ "SigClass" SG_ 124 RM_FreeRunningCounter 2;
+BA_ "SigTimeoutBehavior" SG_ 124 RM_FreeRunningCounter 0;
+BA_ "GenSigStartValue" SG_ 124 RM_FreeRunningCounter 0;
+BA_ "BitNumbering" SG_ 124 RM_FreeRunningCounter 1;
+BA_ "SigTimeoutBehavior" SG_ 124 RM_Led_Status 0;
+BA_ "SigProtected" SG_ 124 RM_Led_Status 0;
+BA_ "SigBitFieldChannel" SG_ 124 RM_Led_Status "RM_Led_Status";
+BA_ "SigClass" SG_ 124 RM_Led_Status 2;
+BA_ "GenSigStartValue" SG_ 124 RM_Led_Status 0;
+BA_ "BitNumbering" SG_ 124 RM_Led_Status 1;
+BA_ "SigProtected" SG_ 257 HL_TargetGear 1;
+BA_ "SigClass" SG_ 257 HL_TargetGear 2;
+BA_ "SigTimeoutBehavior" SG_ 257 HL_TargetGear 0;
+BA_ "GenSigStartValue" SG_ 257 HL_TargetGear 0;
+BA_ "BitNumbering" SG_ 257 HL_TargetGear 1;
+BA_ "SigProtected" SG_ 257 HL_TargetThrottle 1;
+BA_ "SigClass" SG_ 257 HL_TargetThrottle 2;
+BA_ "SigTimeoutBehavior" SG_ 257 HL_TargetThrottle 0;
+BA_ "GenSigStartValue" SG_ 257 HL_TargetThrottle 0;
+BA_ "BitNumbering" SG_ 257 HL_TargetThrottle 1;
+BA_ "SigProtected" SG_ 257 HL_TargetPressure_FL 1;
+BA_ "SigClass" SG_ 257 HL_TargetPressure_FL 2;
+BA_ "SigTimeoutBehavior" SG_ 257 HL_TargetPressure_FL 0;
+BA_ "GenSigStartValue" SG_ 257 HL_TargetPressure_FL 0;
+BA_ "BitNumbering" SG_ 257 HL_TargetPressure_FL 1;
+BA_ "SigProtected" SG_ 257 HL_TargetPressure_FR 1;
+BA_ "SigClass" SG_ 257 HL_TargetPressure_FR 2;
+BA_ "SigTimeoutBehavior" SG_ 257 HL_TargetPressure_FR 0;
+BA_ "GenSigStartValue" SG_ 257 HL_TargetPressure_FR 0;
+BA_ "BitNumbering" SG_ 257 HL_TargetPressure_FR 1;
+BA_ "SigProtected" SG_ 257 HL_TargetPressure_RL 1;
+BA_ "SigClass" SG_ 257 HL_TargetPressure_RL 2;
+BA_ "SigTimeoutBehavior" SG_ 257 HL_TargetPressure_RL 0;
+BA_ "GenSigStartValue" SG_ 257 HL_TargetPressure_RL 0;
+BA_ "BitNumbering" SG_ 257 HL_TargetPressure_RL 1;
+BA_ "SigProtected" SG_ 257 HL_Alive_01 1;
+BA_ "SigClass" SG_ 257 HL_Alive_01 2;
+BA_ "SigTimeoutBehavior" SG_ 257 HL_Alive_01 0;
+BA_ "GenSigStartValue" SG_ 257 HL_Alive_01 0;
+BA_ "BitNumbering" SG_ 257 HL_Alive_01 1;
+BA_ "SigProtected" SG_ 257 HL_TargetPressure_RR 1;
+BA_ "SigClass" SG_ 257 HL_TargetPressure_RR 2;
+BA_ "SigTimeoutBehavior" SG_ 257 HL_TargetPressure_RR 0;
+BA_ "GenSigStartValue" SG_ 257 HL_TargetPressure_RR 0;
+BA_ "BitNumbering" SG_ 257 HL_TargetPressure_RR 1;
+BA_ "SigProtected" SG_ 258 HL_PSA_Profile_Vel_rad_s 1;
+BA_ "SigClass" SG_ 258 HL_PSA_Profile_Vel_rad_s 2;
+BA_ "SigTimeoutBehavior" SG_ 258 HL_PSA_Profile_Vel_rad_s 0;
+BA_ "GenSigStartValue" SG_ 258 HL_PSA_Profile_Vel_rad_s 0;
+BA_ "BitNumbering" SG_ 258 HL_PSA_Profile_Vel_rad_s 1;
+BA_ "SigProtected" SG_ 258 HL_PSA_Profile_Dec 1;
+BA_ "SigClass" SG_ 258 HL_PSA_Profile_Dec 2;
+BA_ "SigTimeoutBehavior" SG_ 258 HL_PSA_Profile_Dec 0;
+BA_ "GenSigStartValue" SG_ 258 HL_PSA_Profile_Dec 0;
+BA_ "BitNumbering" SG_ 258 HL_PSA_Profile_Dec 1;
+BA_ "SigProtected" SG_ 258 HL_PSA_Profile_Acc 1;
+BA_ "SigClass" SG_ 258 HL_PSA_Profile_Acc 2;
+BA_ "SigTimeoutBehavior" SG_ 258 HL_PSA_Profile_Acc 0;
+BA_ "GenSigStartValue" SG_ 258 HL_PSA_Profile_Acc 0;
+BA_ "BitNumbering" SG_ 258 HL_PSA_Profile_Acc 1;
+BA_ "SigProtected" SG_ 258 HL_Alive_02 1;
+BA_ "SigClass" SG_ 258 HL_Alive_02 2;
+BA_ "SigTimeoutBehavior" SG_ 258 HL_Alive_02 0;
+BA_ "GenSigStartValue" SG_ 258 HL_Alive_02 0;
+BA_ "BitNumbering" SG_ 258 HL_Alive_02 1;
+BA_ "SigProtected" SG_ 258 HL_PSA_ModeOfOperation 1;
+BA_ "SigClass" SG_ 258 HL_PSA_ModeOfOperation 2;
+BA_ "SigTimeoutBehavior" SG_ 258 HL_PSA_ModeOfOperation 0;
+BA_ "GenSigStartValue" SG_ 258 HL_PSA_ModeOfOperation 0;
+BA_ "BitNumbering" SG_ 258 HL_PSA_ModeOfOperation 1;
+BA_ "SigProtected" SG_ 258 HL_TargetPSAControl 1;
+BA_ "SigClass" SG_ 258 HL_TargetPSAControl 2;
+BA_ "SigTimeoutBehavior" SG_ 258 HL_TargetPSAControl 0;
+BA_ "GenSigStartValue" SG_ 258 HL_TargetPSAControl 0;
+BA_ "BitNumbering" SG_ 258 HL_TargetPSAControl 1;
+BA_ "SigTimeoutBehavior" SG_ 259 HL_ICE_InitFuelLevel 0;
+BA_ "BitNumbering" SG_ 259 HL_ICE_InitFuelLevel 1;
+BA_ "SigClass" SG_ 259 HL_ICE_InitFuelLevel 2;
+BA_ "SigProtected" SG_ 259 HL_ICE_InitFuelLevel 1;
+BA_ "GenSigStartValue" SG_ 259 HL_ICE_InitFuelLevel 0;
+BA_ "SigProtected" SG_ 259 HL_Crancking_ByPass 1;
+BA_ "SigClass" SG_ 259 HL_Crancking_ByPass 2;
+BA_ "SigTimeoutBehavior" SG_ 259 HL_Crancking_ByPass 0;
+BA_ "GenSigStartValue" SG_ 259 HL_Crancking_ByPass 0;
+BA_ "BitNumbering" SG_ 259 HL_Crancking_ByPass 1;
+BA_ "SigProtected" SG_ 259 HL_SwitchOFF_Ok 1;
+BA_ "SigClass" SG_ 259 HL_SwitchOFF_Ok 2;
+BA_ "SigTimeoutBehavior" SG_ 259 HL_SwitchOFF_Ok 0;
+BA_ "GenSigStartValue" SG_ 259 HL_SwitchOFF_Ok 0;
+BA_ "BitNumbering" SG_ 259 HL_SwitchOFF_Ok 1;
+BA_ "SigProtected" SG_ 259 HL_ICE_Enable 1;
+BA_ "SigClass" SG_ 259 HL_ICE_Enable 2;
+BA_ "SigTimeoutBehavior" SG_ 259 HL_ICE_Enable 0;
+BA_ "GenSigStartValue" SG_ 259 HL_ICE_Enable 0;
+BA_ "BitNumbering" SG_ 259 HL_ICE_Enable 1;
+BA_ "SigProtected" SG_ 259 HL_PDU12_Activate_Lidar 1;
+BA_ "SigClass" SG_ 259 HL_PDU12_Activate_Lidar 2;
+BA_ "SigTimeoutBehavior" SG_ 259 HL_PDU12_Activate_Lidar 0;
+BA_ "GenSigStartValue" SG_ 259 HL_PDU12_Activate_Lidar 0;
+BA_ "BitNumbering" SG_ 259 HL_PDU12_Activate_Lidar 1;
+BA_ "SigProtected" SG_ 259 HL_PDU12_Activate_RADAR 1;
+BA_ "SigClass" SG_ 259 HL_PDU12_Activate_RADAR 2;
+BA_ "SigTimeoutBehavior" SG_ 259 HL_PDU12_Activate_RADAR 0;
+BA_ "GenSigStartValue" SG_ 259 HL_PDU12_Activate_RADAR 0;
+BA_ "BitNumbering" SG_ 259 HL_PDU12_Activate_RADAR 1;
+BA_ "SigProtected" SG_ 259 HL_Alive_03 1;
+BA_ "SigClass" SG_ 259 HL_Alive_03 2;
+BA_ "SigTimeoutBehavior" SG_ 259 HL_Alive_03 0;
+BA_ "GenSigStartValue" SG_ 259 HL_Alive_03 0;
+BA_ "BitNumbering" SG_ 259 HL_Alive_03 1;
+BA_ "SigProtected" SG_ 259 HL_DBW_Enable 1;
+BA_ "SigClass" SG_ 259 HL_DBW_Enable 2;
+BA_ "SigTimeoutBehavior" SG_ 259 HL_DBW_Enable 0;
+BA_ "GenSigStartValue" SG_ 259 HL_DBW_Enable 0;
+BA_ "BitNumbering" SG_ 259 HL_DBW_Enable 1;
+BA_ "SigProtected" SG_ 259 HL_PushToPass_ON 1;
+BA_ "SigClass" SG_ 259 HL_PushToPass_ON 2;
+BA_ "SigTimeoutBehavior" SG_ 259 HL_PushToPass_ON 0;
+BA_ "GenSigStartValue" SG_ 259 HL_PushToPass_ON 0;
+BA_ "BitNumbering" SG_ 259 HL_PushToPass_ON 1;
+BA_ "SigProtected" SG_ 259 HL_PDU12_Activate_GNSS 1;
+BA_ "SigClass" SG_ 259 HL_PDU12_Activate_GNSS 2;
+BA_ "SigTimeoutBehavior" SG_ 259 HL_PDU12_Activate_GNSS 0;
+BA_ "GenSigStartValue" SG_ 259 HL_PDU12_Activate_GNSS 0;
+BA_ "BitNumbering" SG_ 259 HL_PDU12_Activate_GNSS 1;
+BA_ "SigProtected" SG_ 259 HL_PDU12_Activate_OSS 1;
+BA_ "SigClass" SG_ 259 HL_PDU12_Activate_OSS 2;
+BA_ "SigTimeoutBehavior" SG_ 259 HL_PDU12_Activate_OSS 0;
+BA_ "GenSigStartValue" SG_ 259 HL_PDU12_Activate_OSS 0;
+BA_ "BitNumbering" SG_ 259 HL_PDU12_Activate_OSS 1;
+BA_ "SigProtected" SG_ 273 Trajectory_LateralOffSet 1;
+BA_ "SigClass" SG_ 273 Trajectory_LateralOffSet 2;
+BA_ "SigTimeoutBehavior" SG_ 273 Trajectory_LateralOffSet 0;
+BA_ "GenSigStartValue" SG_ 273 Trajectory_LateralOffSet 0;
+BA_ "BitNumbering" SG_ 273 Trajectory_LateralOffSet 1;
+BA_ "SigProtected" SG_ 273 Trajectory_Curvature_05 1;
+BA_ "SigClass" SG_ 273 Trajectory_Curvature_05 2;
+BA_ "SigTimeoutBehavior" SG_ 273 Trajectory_Curvature_05 0;
+BA_ "GenSigStartValue" SG_ 273 Trajectory_Curvature_05 0;
+BA_ "BitNumbering" SG_ 273 Trajectory_Curvature_05 1;
+BA_ "SigProtected" SG_ 273 Trajectory_Curvature_04 1;
+BA_ "SigClass" SG_ 273 Trajectory_Curvature_04 2;
+BA_ "SigTimeoutBehavior" SG_ 273 Trajectory_Curvature_04 0;
+BA_ "GenSigStartValue" SG_ 273 Trajectory_Curvature_04 0;
+BA_ "BitNumbering" SG_ 273 Trajectory_Curvature_04 1;
+BA_ "SigProtected" SG_ 273 Trajectory_Curvature_03 1;
+BA_ "SigClass" SG_ 273 Trajectory_Curvature_03 2;
+BA_ "SigTimeoutBehavior" SG_ 273 Trajectory_Curvature_03 0;
+BA_ "GenSigStartValue" SG_ 273 Trajectory_Curvature_03 0;
+BA_ "BitNumbering" SG_ 273 Trajectory_Curvature_03 1;
+BA_ "SigProtected" SG_ 273 Trajectory_Curvature_02 1;
+BA_ "SigClass" SG_ 273 Trajectory_Curvature_02 2;
+BA_ "SigTimeoutBehavior" SG_ 273 Trajectory_Curvature_02 0;
+BA_ "GenSigStartValue" SG_ 273 Trajectory_Curvature_02 0;
+BA_ "BitNumbering" SG_ 273 Trajectory_Curvature_02 1;
+BA_ "SigProtected" SG_ 273 Trajectory_Curvature_01 1;
+BA_ "SigClass" SG_ 273 Trajectory_Curvature_01 2;
+BA_ "SigTimeoutBehavior" SG_ 273 Trajectory_Curvature_01 0;
+BA_ "GenSigStartValue" SG_ 273 Trajectory_Curvature_01 0;
+BA_ "BitNumbering" SG_ 273 Trajectory_Curvature_01 1;
+BA_ "SigProtected" SG_ 274 Trajectory_HeadingOffSet 1;
+BA_ "SigClass" SG_ 274 Trajectory_HeadingOffSet 2;
+BA_ "SigTimeoutBehavior" SG_ 274 Trajectory_HeadingOffSet 0;
+BA_ "GenSigStartValue" SG_ 274 Trajectory_HeadingOffSet 0;
+BA_ "BitNumbering" SG_ 274 Trajectory_HeadingOffSet 1;
+BA_ "SigProtected" SG_ 274 Trajectory_Curvature_10 1;
+BA_ "SigClass" SG_ 274 Trajectory_Curvature_10 2;
+BA_ "SigTimeoutBehavior" SG_ 274 Trajectory_Curvature_10 0;
+BA_ "GenSigStartValue" SG_ 274 Trajectory_Curvature_10 0;
+BA_ "BitNumbering" SG_ 274 Trajectory_Curvature_10 1;
+BA_ "SigProtected" SG_ 274 Trajectory_Curvature_09 1;
+BA_ "SigClass" SG_ 274 Trajectory_Curvature_09 2;
+BA_ "SigTimeoutBehavior" SG_ 274 Trajectory_Curvature_09 0;
+BA_ "GenSigStartValue" SG_ 274 Trajectory_Curvature_09 0;
+BA_ "BitNumbering" SG_ 274 Trajectory_Curvature_09 1;
+BA_ "SigProtected" SG_ 274 Trajectory_Curvature_08 1;
+BA_ "SigClass" SG_ 274 Trajectory_Curvature_08 2;
+BA_ "SigTimeoutBehavior" SG_ 274 Trajectory_Curvature_08 0;
+BA_ "GenSigStartValue" SG_ 274 Trajectory_Curvature_08 0;
+BA_ "BitNumbering" SG_ 274 Trajectory_Curvature_08 1;
+BA_ "SigProtected" SG_ 274 Trajectory_Curvature_07 1;
+BA_ "SigClass" SG_ 274 Trajectory_Curvature_07 2;
+BA_ "SigTimeoutBehavior" SG_ 274 Trajectory_Curvature_07 0;
+BA_ "GenSigStartValue" SG_ 274 Trajectory_Curvature_07 0;
+BA_ "BitNumbering" SG_ 274 Trajectory_Curvature_07 1;
+BA_ "SigProtected" SG_ 274 Trajectory_Curvature_06 1;
+BA_ "SigClass" SG_ 274 Trajectory_Curvature_06 2;
+BA_ "SigTimeoutBehavior" SG_ 274 Trajectory_Curvature_06 0;
+BA_ "GenSigStartValue" SG_ 274 Trajectory_Curvature_06 0;
+BA_ "BitNumbering" SG_ 274 Trajectory_Curvature_06 1;
+BA_ "SigProtected" SG_ 260 HL_Longitude 1;
+BA_ "SigClass" SG_ 260 HL_Longitude 2;
+BA_ "SigTimeoutBehavior" SG_ 260 HL_Longitude 0;
+BA_ "GenSigStartValue" SG_ 260 HL_Longitude 0;
+BA_ "BitNumbering" SG_ 260 HL_Longitude 1;
+BA_ "SigProtected" SG_ 260 HL_Latitude 1;
+BA_ "SigClass" SG_ 260 HL_Latitude 2;
+BA_ "SigTimeoutBehavior" SG_ 260 HL_Latitude 0;
+BA_ "GenSigStartValue" SG_ 260 HL_Latitude 0;
+BA_ "BitNumbering" SG_ 260 HL_Latitude 1;
+BA_ "SigProtected" SG_ 261 HL_Vel_Up 1;
+BA_ "SigClass" SG_ 261 HL_Vel_Up 2;
+BA_ "SigTimeoutBehavior" SG_ 261 HL_Vel_Up 0;
+BA_ "GenSigStartValue" SG_ 261 HL_Vel_Up 0;
+BA_ "BitNumbering" SG_ 261 HL_Vel_Up 1;
+BA_ "SigProtected" SG_ 261 HL_Vel_North 1;
+BA_ "SigClass" SG_ 261 HL_Vel_North 2;
+BA_ "SigTimeoutBehavior" SG_ 261 HL_Vel_North 0;
+BA_ "GenSigStartValue" SG_ 261 HL_Vel_North 0;
+BA_ "BitNumbering" SG_ 261 HL_Vel_North 1;
+BA_ "SigProtected" SG_ 261 HL_Vel_East 1;
+BA_ "SigClass" SG_ 261 HL_Vel_East 2;
+BA_ "SigTimeoutBehavior" SG_ 261 HL_Vel_East 0;
+BA_ "GenSigStartValue" SG_ 261 HL_Vel_East 0;
+BA_ "BitNumbering" SG_ 261 HL_Vel_East 1;
+BA_ "SigProtected" SG_ 261 HL_Height 1;
+BA_ "SigClass" SG_ 261 HL_Height 2;
+BA_ "SigTimeoutBehavior" SG_ 261 HL_Height 0;
+BA_ "GenSigStartValue" SG_ 261 HL_Height 0;
+BA_ "BitNumbering" SG_ 261 HL_Height 1;
+BA_ "SigProtected" SG_ 262 HL_Aggressiveness 1;
+BA_ "SigClass" SG_ 262 HL_Aggressiveness 2;
+BA_ "SigTimeoutBehavior" SG_ 262 HL_Aggressiveness 0;
+BA_ "GenSigStartValue" SG_ 262 HL_Aggressiveness 0;
+BA_ "BitNumbering" SG_ 262 HL_Aggressiveness 1;
+BA_ "SigProtected" SG_ 262 HL_Watts_Consumed 1;
+BA_ "SigClass" SG_ 262 HL_Watts_Consumed 2;
+BA_ "SigTimeoutBehavior" SG_ 262 HL_Watts_Consumed 0;
+BA_ "GenSigStartValue" SG_ 262 HL_Watts_Consumed 0;
+BA_ "BitNumbering" SG_ 262 HL_Watts_Consumed 1;
+BA_ "SigProtected" SG_ 262 HL_Localization_Acc 1;
+BA_ "SigClass" SG_ 262 HL_Localization_Acc 2;
+BA_ "SigTimeoutBehavior" SG_ 262 HL_Localization_Acc 0;
+BA_ "GenSigStartValue" SG_ 262 HL_Localization_Acc 0;
+BA_ "BitNumbering" SG_ 262 HL_Localization_Acc 1;
+BA_ "SigProtected" SG_ 262 HL_Perception_Acc 1;
+BA_ "SigClass" SG_ 262 HL_Perception_Acc 2;
+BA_ "SigTimeoutBehavior" SG_ 262 HL_Perception_Acc 0;
+BA_ "GenSigStartValue" SG_ 262 HL_Perception_Acc 0;
+BA_ "BitNumbering" SG_ 262 HL_Perception_Acc 1;
+BA_ "SigProtected" SG_ 262 HL_GPU_Usage 1;
+BA_ "SigClass" SG_ 262 HL_GPU_Usage 2;
+BA_ "SigTimeoutBehavior" SG_ 262 HL_GPU_Usage 0;
+BA_ "GenSigStartValue" SG_ 262 HL_GPU_Usage 0;
+BA_ "BitNumbering" SG_ 262 HL_GPU_Usage 1;
+BA_ "SigProtected" SG_ 262 HL_CPU_Usage 1;
+BA_ "SigClass" SG_ 262 HL_CPU_Usage 2;
+BA_ "SigTimeoutBehavior" SG_ 262 HL_CPU_Usage 0;
+BA_ "GenSigStartValue" SG_ 262 HL_CPU_Usage 0;
+BA_ "BitNumbering" SG_ 262 HL_CPU_Usage 1;
+BA_ "SigProtected" SG_ 262 HL_PC_Temp 1;
+BA_ "SigClass" SG_ 262 HL_PC_Temp 2;
+BA_ "SigTimeoutBehavior" SG_ 262 HL_PC_Temp 0;
+BA_ "GenSigStartValue" SG_ 262 HL_PC_Temp 0;
+BA_ "BitNumbering" SG_ 262 HL_PC_Temp 1;
+BA_ "SigProtected" SG_ 292 M1_MaxDownShift_rpm_ML 0;
+BA_ "SigClass" SG_ 292 M1_MaxDownShift_rpm_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 292 M1_MaxDownShift_rpm_ML 0;
+BA_ "GenSigStartValue" SG_ 292 M1_MaxDownShift_rpm_ML 0;
+BA_ "BitNumbering" SG_ 292 M1_MaxDownShift_rpm_ML 1;
+BA_ "SigProtected" SG_ 292 M1_Fuel_Used_ML 0;
+BA_ "SigClass" SG_ 292 M1_Fuel_Used_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 292 M1_Fuel_Used_ML 0;
+BA_ "GenSigStartValue" SG_ 292 M1_Fuel_Used_ML 0;
+BA_ "BitNumbering" SG_ 292 M1_Fuel_Used_ML 1;
+BA_ "SigProtected" SG_ 291 M1_Engine_Run_Time_ML 0;
+BA_ "SigClass" SG_ 291 M1_Engine_Run_Time_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 291 M1_Engine_Run_Time_ML 0;
+BA_ "GenSigStartValue" SG_ 291 M1_Engine_Run_Time_ML 0;
+BA_ "BitNumbering" SG_ 291 M1_Engine_Run_Time_ML 1;
+BA_ "SigProtected" SG_ 291 M1_ECU_Up_Time_ML 0;
+BA_ "SigClass" SG_ 291 M1_ECU_Up_Time_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 291 M1_ECU_Up_Time_ML 0;
+BA_ "GenSigStartValue" SG_ 291 M1_ECU_Up_Time_ML 0;
+BA_ "BitNumbering" SG_ 291 M1_ECU_Up_Time_ML 1;
+BA_ "SigProtected" SG_ 291 M1_Warning_Source_ML 0;
+BA_ "SigClass" SG_ 291 M1_Warning_Source_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 291 M1_Warning_Source_ML 0;
+BA_ "GenSigStartValue" SG_ 291 M1_Warning_Source_ML 0;
+BA_ "BitNumbering" SG_ 291 M1_Warning_Source_ML 1;
+BA_ "SigProtected" SG_ 291 M1_Boost_Warning_ML 0;
+BA_ "SigClass" SG_ 291 M1_Boost_Warning_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 291 M1_Boost_Warning_ML 0;
+BA_ "GenSigStartValue" SG_ 291 M1_Boost_Warning_ML 0;
+BA_ "BitNumbering" SG_ 291 M1_Boost_Warning_ML 1;
+BA_ "SigProtected" SG_ 291 M1_Gearoil_Temp_Warning_ML 0;
+BA_ "SigClass" SG_ 291 M1_Gearoil_Temp_Warning_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 291 M1_Gearoil_Temp_Warning_ML 0;
+BA_ "GenSigStartValue" SG_ 291 M1_Gearoil_Temp_Warning_ML 0;
+BA_ "BitNumbering" SG_ 291 M1_Gearoil_Temp_Warning_ML 1;
+BA_ "SigProtected" SG_ 291 M1_Coolant_Press_Warning_ML 0;
+BA_ "SigClass" SG_ 291 M1_Coolant_Press_Warning_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 291 M1_Coolant_Press_Warning_ML 0;
+BA_ "GenSigStartValue" SG_ 291 M1_Coolant_Press_Warning_ML 0;
+BA_ "BitNumbering" SG_ 291 M1_Coolant_Press_Warning_ML 1;
+BA_ "SigProtected" SG_ 291 M1_Coolant_Temp_Warning_ML 0;
+BA_ "SigClass" SG_ 291 M1_Coolant_Temp_Warning_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 291 M1_Coolant_Temp_Warning_ML 0;
+BA_ "GenSigStartValue" SG_ 291 M1_Coolant_Temp_Warning_ML 0;
+BA_ "BitNumbering" SG_ 291 M1_Coolant_Temp_Warning_ML 1;
+BA_ "SigProtected" SG_ 291 M1_APS_Warning_ML 0;
+BA_ "SigClass" SG_ 291 M1_APS_Warning_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 291 M1_APS_Warning_ML 0;
+BA_ "GenSigStartValue" SG_ 291 M1_APS_Warning_ML 0;
+BA_ "BitNumbering" SG_ 291 M1_APS_Warning_ML 1;
+BA_ "SigProtected" SG_ 291 M1_Engine_Oil_Press_Warning_ML 0;
+BA_ "SigClass" SG_ 291 M1_Engine_Oil_Press_Warning_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 291 M1_Engine_Oil_Press_Warning_ML 0;
+BA_ "GenSigStartValue" SG_ 291 M1_Engine_Oil_Press_Warning_ML 0;
+BA_ "BitNumbering" SG_ 291 M1_Engine_Oil_Press_Warning_ML 1;
+BA_ "SigProtected" SG_ 291 M1_Engine_Oil_TempWarningML 0;
+BA_ "SigClass" SG_ 291 M1_Engine_Oil_TempWarningML 2;
+BA_ "SigTimeoutBehavior" SG_ 291 M1_Engine_Oil_TempWarningML 0;
+BA_ "GenSigStartValue" SG_ 291 M1_Engine_Oil_TempWarningML 0;
+BA_ "BitNumbering" SG_ 291 M1_Engine_Oil_TempWarningML 1;
+BA_ "SigProtected" SG_ 291 M1_Engine_Speed_Warning_ML 0;
+BA_ "SigClass" SG_ 291 M1_Engine_Speed_Warning_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 291 M1_Engine_Speed_Warning_ML 0;
+BA_ "GenSigStartValue" SG_ 291 M1_Engine_Speed_Warning_ML 0;
+BA_ "BitNumbering" SG_ 291 M1_Engine_Speed_Warning_ML 1;
+BA_ "SigProtected" SG_ 291 M1_Fuel_Pressure_Warning_ML 0;
+BA_ "SigClass" SG_ 291 M1_Fuel_Pressure_Warning_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 291 M1_Fuel_Pressure_Warning_ML 0;
+BA_ "GenSigStartValue" SG_ 291 M1_Fuel_Pressure_Warning_ML 0;
+BA_ "BitNumbering" SG_ 291 M1_Fuel_Pressure_Warning_ML 1;
+BA_ "SigProtected" SG_ 291 M1_Knock_Warning_ML 0;
+BA_ "SigClass" SG_ 291 M1_Knock_Warning_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 291 M1_Knock_Warning_ML 0;
+BA_ "GenSigStartValue" SG_ 291 M1_Knock_Warning_ML 0;
+BA_ "BitNumbering" SG_ 291 M1_Knock_Warning_ML 1;
+BA_ "SigProtected" SG_ 290 M1_PushToPass_State_ML 0;
+BA_ "SigClass" SG_ 290 M1_PushToPass_State_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 290 M1_PushToPass_State_ML 0;
+BA_ "GenSigStartValue" SG_ 290 M1_PushToPass_State_ML 0;
+BA_ "BitNumbering" SG_ 290 M1_PushToPass_State_ML 1;
+BA_ "SigProtected" SG_ 290 M1_Engine_State_ML 0;
+BA_ "SigClass" SG_ 290 M1_Engine_State_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 290 M1_Engine_State_ML 0;
+BA_ "GenSigStartValue" SG_ 290 M1_Engine_State_ML 0;
+BA_ "BitNumbering" SG_ 290 M1_Engine_State_ML 1;
+BA_ "SigProtected" SG_ 290 M1_Fuel_State_ML 0;
+BA_ "SigClass" SG_ 290 M1_Fuel_State_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 290 M1_Fuel_State_ML 0;
+BA_ "GenSigStartValue" SG_ 290 M1_Fuel_State_ML 0;
+BA_ "BitNumbering" SG_ 290 M1_Fuel_State_ML 1;
+BA_ "SigProtected" SG_ 290 M1_Launch_State_ML 0;
+BA_ "SigClass" SG_ 290 M1_Launch_State_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 290 M1_Launch_State_ML 0;
+BA_ "GenSigStartValue" SG_ 290 M1_Launch_State_ML 0;
+BA_ "BitNumbering" SG_ 290 M1_Launch_State_ML 1;
+BA_ "SigProtected" SG_ 290 M1_Throttle_Aim_State_ML 0;
+BA_ "SigClass" SG_ 290 M1_Throttle_Aim_State_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 290 M1_Throttle_Aim_State_ML 0;
+BA_ "GenSigStartValue" SG_ 290 M1_Throttle_Aim_State_ML 0;
+BA_ "BitNumbering" SG_ 290 M1_Throttle_Aim_State_ML 1;
+BA_ "SigProtected" SG_ 290 M1_Fuel_Pump_State_ML 0;
+BA_ "SigClass" SG_ 290 M1_Fuel_Pump_State_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 290 M1_Fuel_Pump_State_ML 0;
+BA_ "GenSigStartValue" SG_ 290 M1_Fuel_Pump_State_ML 0;
+BA_ "BitNumbering" SG_ 290 M1_Fuel_Pump_State_ML 1;
+BA_ "SigProtected" SG_ 290 M1_Knock_State_ML 0;
+BA_ "SigClass" SG_ 290 M1_Knock_State_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 290 M1_Knock_State_ML 0;
+BA_ "GenSigStartValue" SG_ 290 M1_Knock_State_ML 0;
+BA_ "BitNumbering" SG_ 290 M1_Knock_State_ML 1;
+BA_ "SigProtected" SG_ 290 M1_FuelCLoop_State_ML 0;
+BA_ "SigClass" SG_ 290 M1_FuelCLoop_State_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 290 M1_FuelCLoop_State_ML 0;
+BA_ "GenSigStartValue" SG_ 290 M1_FuelCLoop_State_ML 0;
+BA_ "BitNumbering" SG_ 290 M1_FuelCLoop_State_ML 1;
+BA_ "SigProtected" SG_ 290 M1_Fuel_Cut_State_ML 0;
+BA_ "SigClass" SG_ 290 M1_Fuel_Cut_State_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 290 M1_Fuel_Cut_State_ML 0;
+BA_ "GenSigStartValue" SG_ 290 M1_Fuel_Cut_State_ML 0;
+BA_ "BitNumbering" SG_ 290 M1_Fuel_Cut_State_ML 1;
+BA_ "SigProtected" SG_ 290 M1_Engine_Speed_Limit_State_ML 0;
+BA_ "SigClass" SG_ 290 M1_Engine_Speed_Limit_State_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 290 M1_Engine_Speed_Limit_State_ML 0;
+BA_ "GenSigStartValue" SG_ 290 M1_Engine_Speed_Limit_State_ML 0;
+BA_ "BitNumbering" SG_ 290 M1_Engine_Speed_Limit_State_ML 1;
+BA_ "SigProtected" SG_ 290 M1_Engine_Overrun_State_ML 0;
+BA_ "SigClass" SG_ 290 M1_Engine_Overrun_State_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 290 M1_Engine_Overrun_State_ML 0;
+BA_ "GenSigStartValue" SG_ 290 M1_Engine_Overrun_State_ML 0;
+BA_ "BitNumbering" SG_ 290 M1_Engine_Overrun_State_ML 1;
+BA_ "SigProtected" SG_ 290 M1_Engine_Speed_Ref_State_ML 0;
+BA_ "SigClass" SG_ 290 M1_Engine_Speed_Ref_State_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 290 M1_Engine_Speed_Ref_State_ML 0;
+BA_ "GenSigStartValue" SG_ 290 M1_Engine_Speed_Ref_State_ML 0;
+BA_ "BitNumbering" SG_ 290 M1_Engine_Speed_Ref_State_ML 1;
+BA_ "SigProtected" SG_ 290 M1_OilPressSensor_State_ML 0;
+BA_ "SigClass" SG_ 290 M1_OilPressSensor_State_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 290 M1_OilPressSensor_State_ML 0;
+BA_ "GenSigStartValue" SG_ 290 M1_OilPressSensor_State_ML 0;
+BA_ "BitNumbering" SG_ 290 M1_OilPressSensor_State_ML 1;
+BA_ "SigProtected" SG_ 290 M1_Boost_Aim_State_ML 0;
+BA_ "SigClass" SG_ 290 M1_Boost_Aim_State_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 290 M1_Boost_Aim_State_ML 0;
+BA_ "GenSigStartValue" SG_ 290 M1_Boost_Aim_State_ML 0;
+BA_ "BitNumbering" SG_ 290 M1_Boost_Aim_State_ML 1;
+BA_ "SigProtected" SG_ 289 M1_WaterPress_ML 0;
+BA_ "SigClass" SG_ 289 M1_WaterPress_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 289 M1_WaterPress_ML 0;
+BA_ "GenSigStartValue" SG_ 289 M1_WaterPress_ML 0;
+BA_ "BitNumbering" SG_ 289 M1_WaterPress_ML 1;
+BA_ "SigProtected" SG_ 289 M1_WaterTemp_ML 0;
+BA_ "SigClass" SG_ 289 M1_WaterTemp_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 289 M1_WaterTemp_ML 0;
+BA_ "GenSigStartValue" SG_ 289 M1_WaterTemp_ML 0;
+BA_ "BitNumbering" SG_ 289 M1_WaterTemp_ML 1;
+BA_ "SigProtected" SG_ 289 M1_OilTemp_ML 0;
+BA_ "SigClass" SG_ 289 M1_OilTemp_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 289 M1_OilTemp_ML 0;
+BA_ "GenSigStartValue" SG_ 289 M1_OilTemp_ML 0;
+BA_ "BitNumbering" SG_ 289 M1_OilTemp_ML 1;
+BA_ "SigProtected" SG_ 289 M1_OilPress_ML 0;
+BA_ "SigClass" SG_ 289 M1_OilPress_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 289 M1_OilPress_ML 0;
+BA_ "GenSigStartValue" SG_ 289 M1_OilPress_ML 0;
+BA_ "BitNumbering" SG_ 289 M1_OilPress_ML 1;
+BA_ "SigProtected" SG_ 289 M1_MiddleFuelPumpPressML 0;
+BA_ "SigClass" SG_ 289 M1_MiddleFuelPumpPressML 2;
+BA_ "SigTimeoutBehavior" SG_ 289 M1_MiddleFuelPumpPressML 0;
+BA_ "GenSigStartValue" SG_ 289 M1_MiddleFuelPumpPressML 0;
+BA_ "BitNumbering" SG_ 289 M1_MiddleFuelPumpPressML 1;
+BA_ "SigProtected" SG_ 288 M1_GearOil_Temp_degC_ML 0;
+BA_ "SigClass" SG_ 288 M1_GearOil_Temp_degC_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 288 M1_GearOil_Temp_degC_ML 0;
+BA_ "GenSigStartValue" SG_ 288 M1_GearOil_Temp_degC_ML 0;
+BA_ "BitNumbering" SG_ 288 M1_GearOil_Temp_degC_ML 1;
+BA_ "SigTimeoutBehavior" SG_ 288 M1_EngineSwitchedON_ML 0;
+BA_ "SigProtected" SG_ 288 M1_EngineSwitchedON_ML 0;
+BA_ "SigBitFieldChannel" SG_ 288 M1_EngineSwitchedON_ML "M1_EngineSwitchedON_ML";
+BA_ "SigClass" SG_ 288 M1_EngineSwitchedON_ML 2;
+BA_ "GenSigStartValue" SG_ 288 M1_EngineSwitchedON_ML 0;
+BA_ "BitNumbering" SG_ 288 M1_EngineSwitchedON_ML 1;
+BA_ "SigProtected" SG_ 288 M1_FuelPressDirect_ML 0;
+BA_ "SigClass" SG_ 288 M1_FuelPressDirect_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 288 M1_FuelPressDirect_ML 0;
+BA_ "GenSigStartValue" SG_ 288 M1_FuelPressDirect_ML 0;
+BA_ "BitNumbering" SG_ 288 M1_FuelPressDirect_ML 1;
+BA_ "SigProtected" SG_ 288 M1_EngineSpeed_ML 0;
+BA_ "SigClass" SG_ 288 M1_EngineSpeed_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 288 M1_EngineSpeed_ML 0;
+BA_ "GenSigStartValue" SG_ 288 M1_EngineSpeed_ML 0;
+BA_ "BitNumbering" SG_ 288 M1_EngineSpeed_ML 1;
+BA_ "SigProtected" SG_ 288 M1_ActualThrottle_ML 0;
+BA_ "SigClass" SG_ 288 M1_ActualThrottle_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 288 M1_ActualThrottle_ML 0;
+BA_ "GenSigStartValue" SG_ 288 M1_ActualThrottle_ML 0;
+BA_ "BitNumbering" SG_ 288 M1_ActualThrottle_ML 1;
+BA_ "SigTimeoutBehavior" SG_ 288 M1_ActualGear_ML 0;
+BA_ "SigProtected" SG_ 288 M1_ActualGear_ML 0;
+BA_ "SigBitFieldChannel" SG_ 288 M1_ActualGear_ML "M1_ActualGear_ML";
+BA_ "SigClass" SG_ 288 M1_ActualGear_ML 2;
+BA_ "GenSigStartValue" SG_ 288 M1_ActualGear_ML 0;
+BA_ "BitNumbering" SG_ 288 M1_ActualGear_ML 1;
+BA_ "SigProtected" SG_ 288 M1_AliveCounter_ML 0;
+BA_ "SigClass" SG_ 288 M1_AliveCounter_ML 2;
+BA_ "SigTimeoutBehavior" SG_ 288 M1_AliveCounter_ML 0;
+BA_ "GenSigStartValue" SG_ 288 M1_AliveCounter_ML 0;
+BA_ "BitNumbering" SG_ 288 M1_AliveCounter_ML 1;
+BA_ "SigProtected" SG_ 1280 M1_Engine_Speed 1;
+BA_ "SigClass" SG_ 1280 M1_Engine_Speed 2;
+BA_ "GenSigStartValue" SG_ 1280 M1_Engine_Speed 0;
+BA_ "BitNumbering" SG_ 1280 M1_Engine_Speed 1;
+BA_ "SigProtected" SG_ 1280 Speed 1;
+BA_ "SigClass" SG_ 1280 Speed 2;
+BA_ "GenSigStartValue" SG_ 1280 Speed 0;
+BA_ "BitNumbering" SG_ 1280 Speed 1;
+BA_ "SigProtected" SG_ 1296 M1_ActualGear_ML 1;
+BA_ "SigBitFieldChannel" SG_ 1296 M1_ActualGear_ML "M1_ActualGear_ML";
+BA_ "SigClass" SG_ 1296 M1_ActualGear_ML 2;
+BA_ "GenSigStartValue" SG_ 1296 M1_ActualGear_ML 0;
+BA_ "BitNumbering" SG_ 1296 M1_ActualGear_ML 1;
+BA_ "SigProtected" SG_ 1296 M1_ActualThrottle_ML 1;
+BA_ "SigClass" SG_ 1296 M1_ActualThrottle_ML 2;
+BA_ "GenSigStartValue" SG_ 1296 M1_ActualThrottle_ML 0;
+BA_ "BitNumbering" SG_ 1296 M1_ActualThrottle_ML 1;
+BA_ "SigProtected" SG_ 1296 BSU_PSA_ActualPos 1;
+BA_ "SigClass" SG_ 1296 BSU_PSA_ActualPos 2;
+BA_ "GenSigStartValue" SG_ 1296 BSU_PSA_ActualPos 0;
+BA_ "BitNumbering" SG_ 1296 BSU_PSA_ActualPos 1;
+BA_ "SigProtected" SG_ 1296 BSU_CBA_ActualPress_RR 1;
+BA_ "SigClass" SG_ 1296 BSU_CBA_ActualPress_RR 2;
+BA_ "GenSigStartValue" SG_ 1296 BSU_CBA_ActualPress_RR 0;
+BA_ "BitNumbering" SG_ 1296 BSU_CBA_ActualPress_RR 1;
+BA_ "SigProtected" SG_ 1296 BSU_CBA_ActualPress_RL 1;
+BA_ "SigClass" SG_ 1296 BSU_CBA_ActualPress_RL 2;
+BA_ "GenSigStartValue" SG_ 1296 BSU_CBA_ActualPress_RL 0;
+BA_ "BitNumbering" SG_ 1296 BSU_CBA_ActualPress_RL 1;
+BA_ "SigProtected" SG_ 1296 BSU_CBA_ActualPress_FR 1;
+BA_ "SigClass" SG_ 1296 BSU_CBA_ActualPress_FR 2;
+BA_ "GenSigStartValue" SG_ 1296 BSU_CBA_ActualPress_FR 0;
+BA_ "BitNumbering" SG_ 1296 BSU_CBA_ActualPress_FR 1;
+BA_ "SigProtected" SG_ 1296 BSU_CBA_ActualPress_FL 1;
+BA_ "SigClass" SG_ 1296 BSU_CBA_ActualPress_FL 2;
+BA_ "GenSigStartValue" SG_ 1296 BSU_CBA_ActualPress_FL 0;
+BA_ "BitNumbering" SG_ 1296 BSU_CBA_ActualPress_FL 1;
+BA_ "SigProtected" SG_ 1312 in_BrakeDiskTempRR 1;
+BA_ "SigClass" SG_ 1312 in_BrakeDiskTempRR 2;
+BA_ "GenSigStartValue" SG_ 1312 in_BrakeDiskTempRR 0;
+BA_ "BitNumbering" SG_ 1312 in_BrakeDiskTempRR 1;
+BA_ "SigProtected" SG_ 1312 in_BrakeDiskTempRL 1;
+BA_ "SigClass" SG_ 1312 in_BrakeDiskTempRL 2;
+BA_ "GenSigStartValue" SG_ 1312 in_BrakeDiskTempRL 0;
+BA_ "BitNumbering" SG_ 1312 in_BrakeDiskTempRL 1;
+BA_ "SigProtected" SG_ 1312 in_BrakeDiskTempFR 1;
+BA_ "SigClass" SG_ 1312 in_BrakeDiskTempFR 2;
+BA_ "GenSigStartValue" SG_ 1312 in_BrakeDiskTempFR 0;
+BA_ "BitNumbering" SG_ 1312 in_BrakeDiskTempFR 1;
+BA_ "SigProtected" SG_ 1312 in_BrakeDiskTempFL 1;
+BA_ "SigClass" SG_ 1312 in_BrakeDiskTempFL 2;
+BA_ "GenSigStartValue" SG_ 1312 in_BrakeDiskTempFL 0;
+BA_ "BitNumbering" SG_ 1312 in_BrakeDiskTempFL 1;
+BA_ "SigProtected" SG_ 1313 TPR4_Press_RR 1;
+BA_ "SigClass" SG_ 1313 TPR4_Press_RR 2;
+BA_ "GenSigStartValue" SG_ 1313 TPR4_Press_RR 0;
+BA_ "BitNumbering" SG_ 1313 TPR4_Press_RR 1;
+BA_ "SigProtected" SG_ 1313 TPR4_Press_RL 1;
+BA_ "SigClass" SG_ 1313 TPR4_Press_RL 2;
+BA_ "GenSigStartValue" SG_ 1313 TPR4_Press_RL 0;
+BA_ "BitNumbering" SG_ 1313 TPR4_Press_RL 1;
+BA_ "SigProtected" SG_ 1313 TPR4_Press_FR 1;
+BA_ "SigClass" SG_ 1313 TPR4_Press_FR 2;
+BA_ "GenSigStartValue" SG_ 1313 TPR4_Press_FR 0;
+BA_ "BitNumbering" SG_ 1313 TPR4_Press_FR 1;
+BA_ "SigProtected" SG_ 1313 TPR4_Press_FL 1;
+BA_ "SigClass" SG_ 1313 TPR4_Press_FL 2;
+BA_ "GenSigStartValue" SG_ 1313 TPR4_Press_FL 0;
+BA_ "BitNumbering" SG_ 1313 TPR4_Press_FL 1;
+BA_ "SigProtected" SG_ 1314 exp_TT_CenterRL 1;
+BA_ "SigClass" SG_ 1314 exp_TT_CenterRL 2;
+BA_ "GenSigStartValue" SG_ 1314 exp_TT_CenterRL 0;
+BA_ "BitNumbering" SG_ 1314 exp_TT_CenterRL 1;
+BA_ "SigProtected" SG_ 1314 exp_TT_CenterRR 1;
+BA_ "SigClass" SG_ 1314 exp_TT_CenterRR 2;
+BA_ "GenSigStartValue" SG_ 1314 exp_TT_CenterRR 0;
+BA_ "BitNumbering" SG_ 1314 exp_TT_CenterRR 1;
+BA_ "SigProtected" SG_ 1314 exp_TT_CenterFR 1;
+BA_ "SigClass" SG_ 1314 exp_TT_CenterFR 2;
+BA_ "GenSigStartValue" SG_ 1314 exp_TT_CenterFR 0;
+BA_ "BitNumbering" SG_ 1314 exp_TT_CenterFR 1;
+BA_ "SigProtected" SG_ 1314 exp_TT_CenterFL 1;
+BA_ "SigClass" SG_ 1314 exp_TT_CenterFL 2;
+BA_ "GenSigStartValue" SG_ 1314 exp_TT_CenterFL 0;
+BA_ "BitNumbering" SG_ 1314 exp_TT_CenterFL 1;
+BA_ "SigProtected" SG_ 1314 M1_Coolant_Temperature 1;
+BA_ "SigClass" SG_ 1314 M1_Coolant_Temperature 2;
+BA_ "GenSigStartValue" SG_ 1314 M1_Coolant_Temperature 0;
+BA_ "BitNumbering" SG_ 1314 M1_Coolant_Temperature 1;
+VAL_ 800 BSU_RM_CurrentFlags_ACK 132 "Emergency Stop Flag" 131 "Safe Stop Flag" 130 "Purple Flag" 129 "Orange Flag" 40 "In Pit (Penalty)" 39 "Loudness" 38 "Time Penalty" 37 "Equipment" 36 "Warning" 35 "Ride Through" 34 "Drive Through" 33 "Long Lap x2" 32 "Change Position" 31 "Long Lap" 30 "Go To Pit" 29 "Yellow Speed Offender" 26 "Blue Static" 19 "Black and Orange" 18 "Black and White" 17 "Black" 16 "Chequered" 3 "Blue" 0 "OFF" ;
+VAL_ 134 RM_GPS_Status 3 "3-D Lock" 2 "2-D Lock" 1 "Time Lock" 0 "No Signal" ;
+VAL_ 124 RM_SM_Car_Flag 132 "Emergency Stop Flag" 131 "Safe Stop Flag" 130 "Purple Flag" 129 "Orange Flag" 40 "In Pit (Penalty)" 39 "Loudness" 38 "Time Penalty" 37 "Equipment" 36 "Warning" 35 "Ride Through" 34 "Drive through" 33 "Long Lap x2" 32 "Change Position" 31 "Long Lap" 30 "Go To Pit" 29 "Yellow Speed Offender" 26 "Blue Static" 19 "Black and Orange" 18 "Black and White" 17 "Black" 16 "Chequered" 3 "Blue" 0 "OFF" ;
+VAL_ 124 RM_SM_Track_Flag 0 "No Flag" 13 "Code 60 Flag" 11 "Full Course Yellow Flag" 7 "Safety Car Out Flag" 5 "Red Flag" ;
+VAL_ 124 RM_SM_SessionType 192 "Race" 128 "Qualify" 64 "Pratice" 0 "No Session" ;
+VAL_ 124 RM_Led_Status 132 "Emergency Stop Flag" 131 "Safe Stop Flag" 130 "Purple Flag" 129 "Orange Flag" 40 "In Pit (Penalty)" 39 "Loudness" 38 "Time Penalty" 37 "Equipment" 36 "Warning" 35 "Ride Through" 34 "Drive through" 33 "Long Lap x2" 32 "Change Position" 31 "Long Lap" 30 "Go To Pit" 29 "Yellow Speed Offender" 28 "Rain Static" 27 "Rain Flashing" 26 "Blue Static" 25 "Green Static" 24 "White Static" 23 "Oil Flashing" 22 "Yellow Slippery" 21 "Yellow Static" 20 "Code 60 Ending" 19 "Black and Orange" 18 "Black and White" 17 "Black" 16 "Chequered" 15 "SDZ" 14 "Oil" 13 "Code 60" 12 "FCY Ending" 11 "FCY" 10 "Virtual Safety Car Ending" 9 "Virtual Safety Car" 8 "Safety Car Ending" 7 "Safety Car" 6 "White" 5 "Red" 4 "Green" 3 "Blue" 2 "Double Yellow" 1 "Yellow" 0 "OFF" ;
+VAL_ 288 M1_EngineSwitchedON_ML 1 "On" 0 "Off" ;
+VAL_ 288 M1_ActualGear_ML 1 "First" 15 "Default" 0 "Neutral" 14 "Reverse" ;
+
