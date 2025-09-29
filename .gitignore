@@ -1,8 +1,8 @@
 # Ignore PPO logs folder
 ppo_logs/
-
+logs/
 # Ignore Python cache
-__pycache__/
+controller/__pycache__/
 
 # Ignore weights folder
 weights/
