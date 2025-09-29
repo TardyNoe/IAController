@@ -1,2 +1,11 @@
+# Ignore PPO logs folder
 ppo_logs/
-ppo_logs/weights/
+
+# Ignore Python cache
+__pycache__/
+
+# Ignore weights folder
+weights/
+
+# Ignore macOS system files
+.DS_Store
